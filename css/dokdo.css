@@ -64,5 +64,33 @@ h3 {
 .title > img{
     width: 100px;
     height: 45px;
+}
+/* 헤더 */
+/* 비디오 */
+/* 우리 독도 */
+/* 독도 행사 */
+.event-inner{
+  width: 100%;
+  margin-left: 15%;
+  background-color: blueviolet;
+  /* display: flex; */
+}
+.event-left{
+  background-color: bisque;
+  width: 100%
+}
+.event-morebt{
+  display: flex;
+  align-items: center;
+}
+.event-left > h2{
+  font-size: 2.0rem;
+}
+.event-left > span{
 
 }
+/* 독도 친구들 */
+/* 독도 가는길 */
+/* 독도 굿즈 */
+/* 이벤트 */
+/* 푸터 */
