@@ -3,15 +3,13 @@
 /* 독도체 font-family: "East Sea Dokdo", sans-serif; */
 @font-face {
   font-family: "GmarketSansMedium";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
-    format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "JeonjuSunR";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202@1.0/JeonjuSunR.woff")
-    format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202@1.0/JeonjuSunR.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -51,46 +49,191 @@ body {
   max-width: 1300px;
   margin: 0 auto;
 }
-.title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 200px;
-    margin-bottom: 50px;
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  margin-bottom: 50px;
 }
 h3 {
   font-size: 2.5rem;
 }
-.title > img{
-    width: 100px;
-    height: 45px;
+.title > img {
+  width: 100px;
+  height: 45px;
 }
 /* 헤더 */
 /* 비디오 */
 /* 우리 독도 */
 /* 독도 행사 */
-.event-inner{
+.event {
+  overflow: hidden;
+}
+.event-inner {
   width: 100%;
-  margin-left: 15%;
-  background-color: blueviolet;
-  /* display: flex; */
+  margin-left: 10%;
+  display: flex;
+  flex-direction: row;
 }
-.event-left{
-  background-color: bisque;
-  width: 100%
+/* 독도 행사 왼쪽 */
+.event-left {
+  width: 15%;
+  height: 100px;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
-.event-morebt{
+.event-left > h2 {
+  font-size: 2rem;
+  padding-bottom: 50px;
+  white-space: nowrap;
+}
+.event-left .event-morebt {
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 50px;
 }
-.event-left > h2{
-  font-size: 2.0rem;
+.event-left > .event-morebt > a > p {
+  font-size: 0.8rem;
 }
-.event-left > span{
-
+/* 독도 행사 오른쪽 */
+.event-right {
+  width: 85%;
+}
+.event-right > .sw-event .swiper-slide {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  margin: 10px 0.2%;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+.event-right > .sw-event .swiper-slide img {
+  width: 70%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin: 50px 0 40px 0;
+}
+.event-right > .sw-event .swiper-slide span {
+  font-size: 1.5rem;
+  margin-bottom: 45px;
+}
+.event-right > .sw-event .swiper-slide p {
+  font-size: 0.8rem;
+  border: 1px solid #191919;
+  border-radius: 3px;
+  padding: 0 20px;
+  line-height: 2rem;
+  margin-bottom: 70px;
+}
+:root {
+  --swiper-theme-color: #0a004e;
 }
 /* 독도 친구들 */
 /* 독도 가는길 */
 /* 독도 굿즈 */
+.md {
+  overflow: hidden;
+}
+.md-inner {
+  width: 100%;
+  margin-left: 8%;
+  display: flex;
+  flex-direction: row;
+}
+/* 독도 MD 왼쪽 */
+.md-left {
+  width: 15%;
+  height: 100px;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.md-left > h2 {
+  font-size: 2rem;
+  white-space: nowrap;
+  padding-bottom: 10px;
+}
+.md-left > p {
+  font-size: 0.8rem;
+  white-space: nowrap;
+  padding-bottom: 50px;
+}
+.md-left .md-morebt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 50px;
+}
+.md-left > .md-morebt > a > p {
+  font-size: 0.8rem;
+}
+/* 독도 MD 오른쪽 */
+.md-right {
+  width: 85%;
+}
+.md-right > .sw-md .swiper-slide {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  margin: 10px 0.2%;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+.md-right > .sw-md .swiper-slide img {
+  /* width: 70%; */
+  /* height: auto; */
+  width: auto;
+  height: 35%;
+  display: block;
+  margin: 0 auto;
+  margin: 100px 0 50px 0;
+}
+/* .md-right > .sw-md .sw-md2 img {
+  width: 30%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin: 50px 0 40px 0;
+}
+.md-right > .sw-md .sw-md5 img {
+  width: 30%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin: 50px 0 40px 0;
+} */
+.md-right > .sw-md .swiper-slide span {
+  font-size: 1.5rem;
+  margin-bottom: 45px;
+}
+.md-right > .sw-md .swiper-slide p {
+  font-size: 0.8rem;
+  border: 1px solid #191919;
+  border-radius: 3px;
+  padding: 0 20px;
+  line-height: 2rem;
+  margin-bottom: 70px;
+}
+:root {
+  --swiper-theme-color: #0a004e;
+}
 /* 이벤트 */
 /* 푸터 */
