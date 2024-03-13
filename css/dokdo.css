@@ -84,6 +84,9 @@ header {
 .header-active i {
   color: #191919;
 }
+.header-active .bt-menu {
+  background: url("../images/1header/toggle_navi.png");
+}
 header > .inner {
   display: flex;
   justify-content: space-between;
@@ -110,6 +113,7 @@ header > .inner {
 .gnb a {
   color: #fff;
 }
+/* 아이콘 >> 인스타+유튜브+언어 */
 .header-right {
   display: flex;
   justify-content: space-between;
@@ -121,21 +125,19 @@ header > .inner {
   padding: 0.8rem;
   color: #fff;
 }
+.fa-chevron-down {
+  font-size: 1rem;
+  padding: 0;
+}
+/* 언어 */
 .language-word {
   position: relative;
   display: block;
   cursor: pointer;
 }
-.language-word::after {
-  content: "";
-  display: inline-block;
-  background: url("../images/1header/select_icon2.png") no-repeat;
-  background-size: cover;
-  width: 8px;
-  height: 7px;
-}
 .languge {
   position: absolute;
+  /* background-color: #fff; */
 }
 .languge li {
   opacity: 0;
@@ -144,6 +146,7 @@ header > .inner {
 .languge-box-active li {
   opacity: 1;
   visibility: visible;
+  background-color: white;
 }
 .languge li a {
   text-align: center;
@@ -155,12 +158,75 @@ header > .inner {
 .languge li:first-child a {
   padding-top: 2rem;
 }
-
-/* 아이콘 >> 인스타+유튜브+언어 */
-/* 언어 */
 /* 모바일 메뉴 버튼 */
+.bt-menu {
+  display: none;
+  width: 37px;
+  height: 12px;
+  background: url("../images/1header/toggle_navi_w.png");
+  background-size: cover;
+  font-size: 0;
+  border: none;
+  cursor: pointer;
+}
 /* 모바일 주메뉴 */
+.nav-m {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 450px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.84);
+  z-index: 9999;
+  padding: 50px;
+  overflow-y: auto;
+  transition: left 0.5s ease-in-out;
+}
+.nav-m-active {
+  left: calc(100% - 450px);
+}
+.nav-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  display: block;
+  width: 23px;
+  height: 23px;
+  background: url("../images/1header/close2.png") no-repeat center;
+  border: 0;
+  cursor: pointer;
+}
+.gnb-m > li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 2.5rem;
+}
+.gnb-m > li > a {
+  font-size: 2.5rem;
+  font-weight: 300;
+  padding: 10px;
+  color: #fff;
+}
 /* ***************비디오 */
+.visual {
+  width: 100%;
+  height: 100vh;
+}
+.visual_area {
+  width: 100%;
+  height: 100%;
+}
+.visual_area video {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
 /* 우리 독도 */
 /* 독도 행사 */
 .event {
