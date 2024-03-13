@@ -15,18 +15,7 @@ window.addEventListener("load", function () {
   let header = document.querySelector("header");
   let logoW = document.querySelector(".logo-w");
   let logoB = document.querySelector(".logo-b");
-  let nav = document.querySelectorAll("nav");
 
-  header.addEventListener("mouseenter", () => {
-    header.classList.add("header-active");
-    logoW.style.display = "none";
-    logoB.style.display = "block";
-  });
-  header.addEventListener("mouseleave", () => {
-    header.classList.remove("header-active");
-    logoW.style.display = "block";
-    logoB.style.display = "none";
-  });
   window.addEventListener("scroll", () => {
     scy = window.document.documentElement.scrollTop;
     if (scy > scActive) {
@@ -39,6 +28,20 @@ window.addEventListener("load", function () {
       logoB.style.display = "none";
     }
   });
+  //메뉴
+  let nav = this.document.querySelector(".nav-m");
+  let btMenu = this.document.querySelector(".bt-menu");
+  let navClose = this.document.querySelector(".nav-close");
+  btMenu.addEventListener("click", () => {
+    nav.classList.add("nav-m-active");
+  });
+  navClose.addEventListener("click", function () {
+    nav.classList.remove("nav-m-active");
+  });
+  nav.addEventListener("mouseleave", () => {
+    nav.classList.remove("nav-m-active");
+  });
+
   //__________________________________________________________________________________________
   // 독도 행사 swiper
   var swiper = new Swiper(".sw-event", {

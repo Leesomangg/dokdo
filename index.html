@@ -83,11 +83,11 @@
           <!-- 웹 주메뉴 -->
           <nav>
             <ul class="gnb">
-              <li><a href="#">우리독도</a></li>
-              <li><a href="#">독도친구들</a></li>
-              <li><a href="#">독도가는길</a></li>
-              <li><a href="#">굿즈</a></li>
-              <li><a href="#">이벤트</a></li>
+              <li><a href="#page-1">우리독도</a></li>
+              <li><a href="#page-2">독도친구들</a></li>
+              <li><a href="#page-3">독도가는길</a></li>
+              <li><a href="#page-4">굿즈</a></li>
+              <li><a href="#page-5">이벤트</a></li>
             </ul>
           </nav>
 
@@ -103,6 +103,7 @@
             <div class="language-box">
               <span class="language-word">
                 <i class="fa-solid fa-globe icons"></i>
+                <i class="fa-solid fa-chevron-down icons"></i>
               </span>
               <ul class="languge">
                 <li><a href="#">KOR</a></li>
@@ -113,37 +114,41 @@
                 <li><a href="#">FRA</a></li>
               </ul>
             </div>
+            <!-- 모바일 메뉴 버튼 -->
+            <button class="bt-menu"></i></button>
           </div>
-          <!-- 모바일 메뉴 버튼 -->
-          <button class="bt-menu" style="display: none">menu</button>
-          <!--모바일 주메뉴  -->
-          <nav class="nav-m" style="display: none">
-            <button class="nav-close">닫기</button>
-            <ul class="gnb-m">
-              <li>
-                <a href="#">우리독도</a>
-              </li>
-              <li>
-                <a href="#">독도친구들</a>
-              </li>
-              <li>
-                <a href="#">독도가는길</a>
-              </li>
-              <li>
-                <a href="#">굿즈</a>
-              </li>
-              <li>
-                <a href="#">이벤트</a>
-              </li>
-            </ul>
-          </nav>
         </div>
       </header>
-
+      <!--모바일 주메뉴  -->
+      <nav class="nav-m">
+        <button class="nav-close"></button>
+        <ul class="gnb-m">
+          <li>
+            <a href="#">우리독도</a>
+          </li>
+          <li>
+            <a href="#">독도친구들</a>
+          </li>
+          <li>
+            <a href="#">독도가는길</a>
+          </li>
+          <li>
+            <a href="#">굿즈</a>
+          </li>
+          <li>
+            <a href="#">이벤트</a>
+          </li>
+        </ul>
+      </nav>
       <!-- 비디오 -->
-      <section class="visual"></section>
+      <div class="visual">
+        <div class="visual_area">
+          <video src="images/mainVideo.mp4" autoplay loop type="video/mp4"></video>
+        </div>
+      </div>
       <!-- 우리 독도 -->
-      <section class="we">
+      <div class="pages">
+      <div class="we page" id="page-1">
         <div class="inner">
           <div class="we-top">
             <div class="title">
@@ -152,9 +157,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
       <!-- 독도 행사 -->
-      <div class="event">
+      <div class="event page" id="page-2">
         <div class="event-inner">
           <div class="event-left">
             <h2>독도 행사</h2>
@@ -204,7 +209,7 @@
         </div>
       </div>
       <!-- 독도 친구들 -->
-      <div class="friends">
+      <div class="friends page" id="page-3">
         <div class="inner">
           <div class="title">
             <h3>독도 친구들</h3>
@@ -213,7 +218,7 @@
         </div>
       </div>
       <!-- 독도 가는길 -->
-      <div class="go">
+      <div class="go page" id="page-4">
         <div class="inner">
           <div class="title">
             <h3>독도 가는길</h3>
@@ -222,7 +227,7 @@
         </div>
       </div>
       <!-- 독도 굿즈 -->
-      <div class="md">
+      <div class="md page" id="page-5">
         <div class="md-inner">
           <div class="md-left">
             <h2>독도 MD</h2>
@@ -273,7 +278,7 @@
         </div>
       </div>
       <!-- 이벤트 -->
-      <div class="promo">
+      <div class="promo page" id="page-6">
         <div class="inner">
           <div class="title">
             <h3>독도 이벤트</h3>
@@ -281,6 +286,7 @@
           </div>
         </div>
       </div>
+    </div>
       <!-- 푸터 -->
       <footer class="footer">
         <div class="inner">

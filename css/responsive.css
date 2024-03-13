@@ -1,0 +1,20 @@
+@media screen and (max-width: 1400px) {
+  header > .inner {
+    padding: 0 2rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+    .logo img {
+        width: 100px;
+        height: auto;
+      }
+    nav {
+    display: none;
+  }
+  .bt-menu {
+    display: block;
+  }
+  .header-right-icon {
+    display: none;
+  }
+}
