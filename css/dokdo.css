@@ -35,9 +35,9 @@ html {
 }
 body {
   font-family: "GmarketSansMedium", sans-serif;
-  font-size: 10px;
   color: #191919;
   word-break: keep-all;
+  font-size: 10px;
 }
 /* 공통요소 */
 .wrap {
@@ -63,8 +63,104 @@ h3 {
   width: 100px;
   height: 45px;
 }
-/* 헤더 */
-/* 비디오 */
+/* ***************헤더 */
+/* 상단 */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0);
+  transition: all 0.5s;
+}
+.header-active {
+  background-color: #fff;
+}
+.header-active nav .gnb a {
+  color: #191919;
+}
+.header-active i {
+  color: #191919;
+}
+header > .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+/* 로고 */
+.logo img {
+  width: 137px;
+  height: auto;
+}
+.logo-w {
+  display: block;
+}
+.logo-b {
+  display: none;
+}
+/* 웹 주메뉴 */
+.gnb {
+  display: flex;
+  gap: 30px;
+  font-size: 2rem;
+}
+.gnb a {
+  color: #fff;
+}
+.header-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 1rem;
+}
+.icons {
+  font-size: 2rem;
+  padding: 0.8rem;
+  color: #fff;
+}
+.language-word {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+.language-word::after {
+  content: "";
+  display: inline-block;
+  background: url("../images/1header/select_icon2.png") no-repeat;
+  background-size: cover;
+  width: 8px;
+  height: 7px;
+}
+.languge {
+  position: absolute;
+}
+.languge li {
+  opacity: 0;
+  visibility: hidden;
+}
+.languge-box-active li {
+  opacity: 1;
+  visibility: visible;
+}
+.languge li a {
+  text-align: center;
+  display: block;
+  font-size: 1.4rem;
+  color: #191919;
+  padding: 0.8rem;
+}
+.languge li:first-child a {
+  padding-top: 2rem;
+}
+
+/* 아이콘 >> 인스타+유튜브+언어 */
+/* 언어 */
+/* 모바일 메뉴 버튼 */
+/* 모바일 주메뉴 */
+/* ***************비디오 */
 /* 우리 독도 */
 /* 독도 행사 */
 .event {

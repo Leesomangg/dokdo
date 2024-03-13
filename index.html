@@ -41,7 +41,7 @@
     <meta property="og:title" content="독도는 대한민국의 영토 입니다." />
     <meta property="og:description" content="독도, 대한민국 천연기념물 336호, 독도 동영상, 독도 사진, 독도 정부 입장, 독도 영토주권, 한국 독도" />
     <meta property="og:image" content="https://dokdo.mofa.go.kr/kor/img/main/snsimg_600.jpg" />
-    <!-- <meta property="og:url" content="https://www.hyundaigroup.com" /> -->
+    <meta property="og:url" content="https://www.hyundaigroup.com" />
     <!-- css -->
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -54,8 +54,8 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/dokdo.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-    <!-- <script src="js/html5shiv.js"></script>
-        <script src="js/prefixfree.min.js"></script> -->
+    <script src="js/html5shiv.js"></script>
+    <!-- <script src="js/prefixfree.min.js"></script> -->
     <script src="js/respond.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -72,9 +72,74 @@
     <!-- 전체 레이아웃 -->
     <div id="wrap">
       <!-- 헤더 -->
-      <header class="header">
-        <div class="inner"></div>
+      <header>
+        <div class="inner">
+          <!-- 로고 -->
+          <a href="#" class="logo" alt="헤더_로고">
+            <img src="images/1header/logo_w.png" class="logo-w" alt="헤더_로고_화이트" />
+            <img src="images/1header/logo_b.png" class="logo-b" alt="헤더_로고_블루" />
+          </a>
+
+          <!-- 웹 주메뉴 -->
+          <nav>
+            <ul class="gnb">
+              <li><a href="#">우리독도</a></li>
+              <li><a href="#">독도친구들</a></li>
+              <li><a href="#">독도가는길</a></li>
+              <li><a href="#">굿즈</a></li>
+              <li><a href="#">이벤트</a></li>
+            </ul>
+          </nav>
+
+          <!-- 아이콘 >> 인스타+유튜브+언어 -->
+          <div class="header-right">
+            <div class="header-right-icon">
+              <a href="https://www.instagram.com/k_dokdo/"><i class="fa-brands fa-instagram icons"></i></a>
+            </div>
+            <div class="header-right-icon">
+              <a href="https://www.youtube.com/watch?v=iNDRFPcNLns"><i class="fa-brands fa-youtube icons"></i></a>
+            </div>
+            <!-- 언어 -->
+            <div class="language-box">
+              <span class="language-word">
+                <i class="fa-solid fa-globe icons"></i>
+              </span>
+              <ul class="languge">
+                <li><a href="#">KOR</a></li>
+                <li><a href="#">ENG</a></li>
+                <li><a href="#">JAP</a></li>
+                <li><a href="#">RUS</a></li>
+                <li><a href="#">CHN</a></li>
+                <li><a href="#">FRA</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- 모바일 메뉴 버튼 -->
+          <button class="bt-menu" style="display: none">menu</button>
+          <!--모바일 주메뉴  -->
+          <nav class="nav-m" style="display: none">
+            <button class="nav-close">닫기</button>
+            <ul class="gnb-m">
+              <li>
+                <a href="#">우리독도</a>
+              </li>
+              <li>
+                <a href="#">독도친구들</a>
+              </li>
+              <li>
+                <a href="#">독도가는길</a>
+              </li>
+              <li>
+                <a href="#">굿즈</a>
+              </li>
+              <li>
+                <a href="#">이벤트</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </header>
+
       <!-- 비디오 -->
       <section class="visual"></section>
       <!-- 우리 독도 -->
