@@ -1,3 +1,21 @@
+document.addEventListener("DOMContentLoaded", function () {
+  function smoothScroll(targetId) {
+    var targetSection = document.querySelector(targetId);
+    var targetTop = targetSection.offsetTop;
+    var headerHeight = document.querySelector("header").offsetHeight;
+    var adjustedTop = targetTop - headerHeight;
+    window.scrollTo({
+      top: adjustedTop,
+      behavior: "smooth",
+    });
+  }
+  document.querySelectorAll(".gnb a, .gnb-m a").forEach(function (menuLink) {
+    menuLink.addEventListener("click", function (e) {
+      e.preventDefault();
+      smoothScroll(this.getAttribute("href"));
+    });
+  });
+});
 window.addEventListener("load", function () {
   // AOS적용
   AOS.init();
