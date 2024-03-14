@@ -8,6 +8,18 @@
   font-style: normal;
 }
 @font-face {
+  font-family: "GmarketSansLight";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GmarketSansBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "JeonjuSunR";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202@1.0/JeonjuSunR.woff") format("woff");
   font-weight: normal;
@@ -171,6 +183,7 @@ header > .inner {
 }
 /* 모바일 주메뉴 */
 .nav-m {
+  font-family: "GmarketSanslighter";
   display: block;
   position: fixed;
   top: 0;
@@ -201,7 +214,10 @@ header > .inner {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding-top: 2.5rem;
+  padding-bottom: 2rem;
+}
+.gnb-m > li:first-child {
+  padding-top: 5rem;
 }
 .gnb-m > li > a {
   font-size: 2.5rem;

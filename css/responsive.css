@@ -4,11 +4,7 @@
   }
 }
 @media screen and (max-width: 1024px) {
-    .logo img {
-        width: 100px;
-        height: auto;
-      }
-    nav {
+  nav {
     display: none;
   }
   .bt-menu {
@@ -16,5 +12,24 @@
   }
   .header-right-icon {
     display: none;
+  }
+  .fa-chevron-down {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .logo img {
+    width: 110px;
+    height: auto;
+  }
+  .nav-m {
+    width: 80%;
+  }
+  .nav-m-active {
+    left: calc(100% - 80%);
+  }
+  .nav-m > .header-right-m {
+    display: flex;
+    gap: 10px;
   }
 }
