@@ -262,7 +262,8 @@ header > .inner {
   padding-top: 50px;
 }
 .event-left > .event-morebt > a > p {
-  font-size: 1.3rem;
+  font-family: "GmarketSansLight";
+  font-size: 1.4rem;
 }
 /* 독도 행사 오른쪽 */
 .event-right {
@@ -287,14 +288,16 @@ header > .inner {
   margin: 50px 0 40px 0;
 }
 .event-right > .sw-event .swiper-slide span {
+  font-family: "GmarketSansLight";
   font-size: 2.4rem;
   margin-bottom: 45px;
 }
 .event-right > .sw-event .swiper-slide p {
+  font-family: "GmarketSansLight";
   font-size: 1.3rem;
   border: 1px solid #191919;
   border-radius: 3px;
-  padding: 0 20px;
+  padding: 0 15px;
   line-height: 26px;
   margin-bottom: 70px;
 }
@@ -330,6 +333,7 @@ header > .inner {
   padding-bottom: 10px;
 }
 .md-left > p {
+  font-family: "GmarketSansLight";
   font-size: 1.3rem;
   white-space: nowrap;
   padding-bottom: 50px;
@@ -342,7 +346,8 @@ header > .inner {
   padding-top: 50px;
 }
 .md-left > .md-morebt > a > p {
-  font-size: 1.3rem;
+  font-family: "GmarketSansLight";
+  font-size: 1.4rem;
 }
 /* 독도 MD 오른쪽 */
 .md-right {
@@ -383,14 +388,16 @@ header > .inner {
   margin: 50px 0 40px 0;
 } */
 .md-right > .sw-md .swiper-slide span {
+  font-family: "GmarketSansLight";
   font-size: 2.4rem;
   margin-bottom: 45px;
 }
 .md-right > .sw-md .swiper-slide p {
+  font-family: "GmarketSansLight";
   font-size: 1.3rem;
   border: 1px solid #191919;
   border-radius: 3px;
-  padding: 0 20px;
+  padding: 0 15px;
   line-height: 26px;
   margin-bottom: 70px;
 }
@@ -398,6 +405,18 @@ header > .inner {
   --swiper-theme-color: #0a004e;
 }
 /* 이벤트 */
+.promo > .inner {
+  margin-bottom: 200px;
+}
+.promo > .inner > .promo-contents {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.promo > .inner > .promo-contents > a > img {
+  width: 100%;
+  height: auto;
+}
 /* 푸터 */
 .footer {
   background-color: #223055;
@@ -420,6 +439,7 @@ header > .inner {
   right: 250px;
 }
 .footer-middle > .address {
+  font-family: "GmarketSansLight";
   font-size: 1.3rem;
   color: #fff;
 }
@@ -427,7 +447,8 @@ header > .inner {
   font-size: 1rem;
 }
 .footer-middle > .copyright {
-  font-size: 1rem;
+  font-family: "GmarketSansLight";
+  font-size: 1.2rem;
   color: #fff;
   padding: 15px 0 0 0;
 }
@@ -448,6 +469,7 @@ header > .inner {
   z-index: 10;
   height: 29px;
   padding-left: 30px;
+  font-family: "GmarketSansLight";
   font-size: 1.3rem;
   color: #fff;
   text-align: left;
@@ -472,6 +494,7 @@ header > .inner {
   display: block;
   position: relative;
   padding: 5px 0;
+  font-family: "GmarketSansLight";
   font-size: 1.3rem;
   color: #fff;
   line-height: 16px;
