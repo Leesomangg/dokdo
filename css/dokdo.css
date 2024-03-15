@@ -229,12 +229,14 @@ header > .inner {
 .visual {
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 }
-.visual_area {
+.swVisual {
+  position: relative;
   width: 100%;
   height: 100%;
 }
-.visual_area video {
+.swVisual video {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -243,7 +245,143 @@ header > .inner {
   height: auto;
   object-fit: cover;
 }
-/* 우리 독도 */
+/* ***************우리 독도 */
+.reason {
+  position: relative;
+  /* height: 52.08vh; */
+  height: 100vh;
+  max-height: 1300px;
+  max-height: 676px;
+}
+.swReason {
+  width: 100%;
+  height: 100%;
+}
+.reason-box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+.reason-img-1 {
+  background: url("../images/2history/bg-history.png") no-repeat center;
+  background-size: cover;
+}
+.reason-img-2 {
+  background: url("../images/2history/bg-geography.png") no-repeat center;
+  background-size: cover;
+}
+.reason-img-3 {
+  background: url("../images/2history/bg-law.png") no-repeat center;
+  background-size: cover;
+}
+.reason-box > .inner {
+  width: 1300px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+}
+.reason-txt {
+  flex-basis: 50%;
+  font-family: "GmarketSansLight";
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  height: 100%;
+  color: #fff;
+  overflow: hidden;
+}
+.reason-txt > h3 {
+  font-weight: bold;
+  font-size: 5rem;
+  opacity: 0;
+  transform: translateY(100px);
+}
+.swReason .swiper-slide-active .reason-txt h3 {
+  transition: all 1s 0.5s;
+  opacity: 1;
+  transform: translateY(0);
+}
+.reason-txt p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  opacity: 0;
+  transform: translateY(100px);
+}
+.swReason .swiper-slide-active .reason-txt p {
+  transition: all 1s 0.8s;
+  opacity: 1;
+  transform: translateY(0);
+}
+.reason-txt a {
+  font-size: 1.5rem;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  padding-right: 46px;
+  opacity: 0;
+  transform: translateY(100px);
+}
+.swReason .swiper-slide-active .reason-txt a {
+  transition: all 1s 1s;
+  opacity: 1;
+  transform: translateY(0);
+}
+.reason-img > p {
+  font-family: "GmarketSanslight";
+  color: #fff;
+  font-weight: lighter;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+.reason-img > p > em {
+  font-family: "GmarketSansbold";
+  font-size: 10rem;
+}
+.reason-img {
+  flex-basis: 50%;
+  width: 100%;
+  height: 100%;
+}
+.reason-img img {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: translateY(100px);
+}
+.swReason .swiper-slide-active .reason-img img {
+  transition: all 1s 1s;
+  opacity: 1;
+  transform: translateY(0);
+}
+#app {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  left: 0;
+  width: 180px;
+  height: 20px;
+  overflow: hidden;
+  z-index: 1;
+}
+.swiper-pagination {
+  margin-right: 5rem;
+}
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  margin-left: 1rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease height;
+}
+.swiper-pagination-bullet-active {
+  height: 40px;
+  cursor: auto;
+}
 /* 독도 행사 */
 .event {
   overflow: hidden;
