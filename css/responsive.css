@@ -1,12 +1,6 @@
-@media screen and (max-width: 1500px) {
-
-}
 @media screen and (max-width: 1400px) {
   header > .inner {
     padding: 0 2rem;
-  }
-  .swiper-pagination {
-    margin-right: 2rem;
   }
 }
 @media screen and (max-width: 1024px) {
