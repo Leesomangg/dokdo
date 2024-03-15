@@ -278,7 +278,8 @@ header > .inner {
   padding-top: 50px;
 }
 .event-left > .event-morebt > a > p {
-  font-family: "GmarketSansLight";
+  font-family: "GmarketSansMedium";
+  /* font-family: "GmarketSansLight"; */
   font-size: 1.4rem;
 }
 /* 독도 행사 오른쪽 */
@@ -309,7 +310,8 @@ header > .inner {
   margin-bottom: 45px;
 }
 .event-right > .sw-event .swiper-slide p {
-  font-family: "GmarketSansLight";
+  /* font-family: "GmarketSansLight"; */
+  font-family: "GmarketSansMedium";
   font-size: 1.3rem;
   border: 1px solid #191919;
   border-radius: 3px;
@@ -362,7 +364,8 @@ header > .inner {
   padding-top: 50px;
 }
 .md-left > .md-morebt > a > p {
-  font-family: "GmarketSansLight";
+  /* font-family: "GmarketSansLight"; */
+  font-family: "GmarketSansMedium";
   font-size: 1.4rem;
 }
 /* 독도 MD 오른쪽 */
@@ -409,7 +412,8 @@ header > .inner {
   margin-bottom: 45px;
 }
 .md-right > .sw-md .swiper-slide p {
-  font-family: "GmarketSansLight";
+  /* font-family: "GmarketSansLight"; */
+  font-family: "GmarketSansMedium";
   font-size: 1.3rem;
   border: 1px solid #191919;
   border-radius: 3px;

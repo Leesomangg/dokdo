@@ -71,6 +71,12 @@ window.addEventListener("load", function () {
       el: ".swiper-pagination-event",
       clickable: true,
     },
+    breakpoints: {
+      1375: {
+        spaceBetween: 25,
+        slidesPerView: 4,
+      },
+    },
   });
   // 독도 md swiper
   var swiper = new Swiper(".sw-md", {
