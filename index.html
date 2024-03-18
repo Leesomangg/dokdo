@@ -67,6 +67,16 @@
     <!-- js -->
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q3ZDC43EPS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-Q3ZDC43EPS");
+    </script>
   </head>
   <body>
     <!-- 전체 레이아웃 -->
@@ -237,14 +247,57 @@
             <h3>독도 친구들</h3>
             <img src="images/dokdo_icon.png" alt="독도 아이콘" />
           </div>
+          <img src="images/4friends/bg650.jpg" alt="배경" />
         </div>
       </div>
       <!-- 독도 가는길 -->
       <div class="go" id="page-3">
-        <div class="inner">
-          <div class="title">
-            <h3>독도 가는길</h3>
-            <img src="images/dokdo_icon.png" alt="독도 아이콘" />
+        <div class="title">
+          <h3>독도 가는길</h3>
+          <img src="images/dokdo_icon.png" alt="독도 아이콘" />
+        </div>
+        <div class="go-bg">
+          <div class="inner">
+            <div class="go-map">
+              <div class="go-map-top">
+                <ul class="go-map-top-list">
+                  <li>
+                    <!-- <img src="images/5way/ship1.png" alt="배" /> -->
+                    <i class="fa-solid fa-ship"></i>
+                    <p>포항 <----> 울릉</p>
+                    <button class="re-btn">예매하기</button>
+                  </li>
+                  <li>
+                    <!-- <img src="images/5way/ship1.png" alt="배" /> -->
+                    <i class="fa-solid fa-ship"></i>
+                    <p>울릉 <----> 독도</p>
+                    <button class="re-btn">예매하기</button>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-file-circle-check"></i>
+                    <p>예매 확인 / 취소</p>
+                    <button class="re-btn">예매확인</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="go-map-bottom">
+                <ul class="go-map-bottom-list">
+                  <li>
+                    <img src="images/5way/way1.png" alt="한반도" />
+                  </li>
+                  <li class="go-map-ulleung">
+                    <img src="images/5way/way2.png" alt="울릉도" />
+                    <span>울릉도</span>
+                  </li>
+                  <li class="go-map-dockdo">
+                    <a href="#">
+                      <img src="images/5way/way3.png" alt="독도" />
+                      <span class="go-map-list-dokdo">독도</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
