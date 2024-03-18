@@ -59,8 +59,8 @@ window.addEventListener("load", function () {
   nav.addEventListener("mouseleave", () => {
     nav.classList.remove("nav-m-active");
   });
-  // 이유 
-    const swReason = new Swiper(".swReason", {
+  // 이유
+  const swReason = new Swiper(".swReason", {
     direction: "vertical",
     pagination: {
       el: ".swiper-pagination",
@@ -76,7 +76,7 @@ window.addEventListener("load", function () {
   //__________________________________________________________________________________________
   // 독도 행사 swiper
   var swiper = new Swiper(".sw-event", {
-    slidesPerView: 4,
+    slidesPerView: 1,
     loop: true,
     spaceBetween: 30,
     freeMode: true,
@@ -88,6 +88,14 @@ window.addEventListener("load", function () {
       1375: {
         spaceBetween: 25,
         slidesPerView: 4,
+      },
+      1040: {
+        spaceBetween: 25,
+        slidesPerView: 3,
+      },
+      690: {
+        spaceBetween: 25,
+        slidesPerView: 2,
       },
     },
   });

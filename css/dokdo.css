@@ -494,6 +494,9 @@ header > .inner {
 }
 /* 독도 친구들 */
 /* 독도 가는길 */
+.go {
+  margin-bottom: 80px;
+}
 .go-bg {
   width: 100%;
   background-color: #6283a4;
@@ -545,6 +548,7 @@ header > .inner {
 }
 /* go-map bottom */
 .go-map-bottom {
+  padding: 25px 0;
   height: auto;
 }
 .go-map-bottom-list {
@@ -557,14 +561,55 @@ header > .inner {
   display: inline-block;
 }
 .go-map-ulleung > span {
+  font-size: 2rem;
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translateX(-50%);
 }
+.go-map-dockdo {
+  position: relative;
+  display: inline-block;
+}
+.go-map-dockdo > a > .dong {
+  font-size: 2rem;
+  position: absolute;
+  top: 20%;
+  left: 27%;
+}
+.go-map-dockdo > a > .seo {
+  font-size: 2rem;
+  position: absolute;
+  top: 42%;
+  left: 64%;
+}
+/* .go-map-list-dokdo {
+  padding: 20px;
+  border: 1px dashed #0a004e;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  right: 0;
+} */
+.go-map-list-dokdo > span {
+  content: "";
+  padding: 40px;
+  border: 1px dashed #0a004e;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.go-map-list-dokdo > p {
+  position: absolute;
+  top: 36px;
+  right: 23px;
+  font-size: 2rem;
+}
 /* 독도 굿즈 */
 .md {
   overflow: hidden;
+  padding-top: 100px;
 }
 .md-inner {
   width: 100%;
