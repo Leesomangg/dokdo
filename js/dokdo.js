@@ -59,7 +59,20 @@ window.addEventListener("load", function () {
   nav.addEventListener("mouseleave", () => {
     nav.classList.remove("nav-m-active");
   });
-
+  // 이유 
+    const swReason = new Swiper(".swReason", {
+    direction: "vertical",
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    loop: true,
+    speed: 500,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+  });
   //__________________________________________________________________________________________
   // 독도 행사 swiper
   var swiper = new Swiper(".sw-event", {
