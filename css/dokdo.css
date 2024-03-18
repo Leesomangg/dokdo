@@ -324,6 +324,74 @@ header > .inner {
 }
 /* 독도 친구들 */
 /* 독도 가는길 */
+.go-bg {
+  width: 100%;
+  background-color: #6283a4;
+  padding-top: 10px;
+}
+.go-bg .inner {
+  width: 100%;
+  height: auto;
+  /* background-color: #6283a4; */
+  position: relative;
+}
+/* go-map top */
+.go-map-top {
+  display: block;
+  position: relative;
+  width: 90%;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+.go-map-top-list {
+  display: flex;
+  justify-content: space-around;
+}
+.go-map-top .go-map-top-list li {
+  display: block;
+  text-align: center;
+}
+.go-map-top .go-map-top-list li i {
+  font-size: 3rem;
+  padding: 20px 0;
+  color: #154370;
+  color: #0a004e;
+}
+.go-map-top .go-map-top-list li p {
+  font-size: 2rem;
+  font-family: "GmarketSansLight";
+}
+.go-map-top .go-map-top-list li button {
+  margin-top: 15px;
+  padding: 5px 10px;
+  /* background-color: #0a004e; */
+  background-color: #154370;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-family: "GmarketSansLight";
+}
+/* go-map bottom */
+.go-map-bottom {
+  height: auto;
+}
+.go-map-bottom-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.go-map-ulleung {
+  position: relative;
+  display: inline-block;
+}
+.go-map-ulleung > span {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
 /* 독도 굿즈 */
 .md {
   overflow: hidden;
