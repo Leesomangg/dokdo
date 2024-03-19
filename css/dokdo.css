@@ -469,6 +469,7 @@ header > .inner {
   margin: 10px 0.2%;
   background-color: #fff;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  padding-bottom: 70px;
 }
 .event-right > .sw-event .swiper-slide img {
   width: 70%;
@@ -490,12 +491,15 @@ header > .inner {
   border-radius: 3px;
   padding: 0 15px;
   line-height: 26px;
-  margin-bottom: 70px;
 }
 :root {
   --swiper-theme-color: #0a004e;
 }
 /* 독도 친구들 */
+.friends-contents img {
+  width: 100%;
+  height: auto;
+}
 /* 독도 가는길 */
 .go {
   margin-bottom: 80px;
@@ -609,6 +613,17 @@ header > .inner {
   right: 23px;
   font-size: 2rem;
 }
+.go-map-list-dokdo > img {
+  width: 45px;
+  height: auto;
+  position: absolute;
+  top: -15px;
+  right: -10px;
+}
+.go-map-bottom-list > li > img {
+  width: 100%;
+  height: auto;
+}
 /* 독도 굿즈 */
 .md {
   overflow: hidden;
@@ -668,6 +683,7 @@ header > .inner {
   margin: 10px 0.2%;
   background-color: #fff;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  padding-bottom: 70px;
 }
 .md-right > .sw-md .swiper-slide img {
   /* width: 70%; */
@@ -705,7 +721,6 @@ header > .inner {
   border-radius: 3px;
   padding: 0 15px;
   line-height: 26px;
-  margin-bottom: 70px;
 }
 :root {
   --swiper-theme-color: #0a004e;
