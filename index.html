@@ -192,7 +192,12 @@
       <!-- 비디오 -->
       <div class="visual">
         <div class="visual_area">
-          <video src="images/mainVideo.mp4" type="video/mp4" autoplay loop></video>
+          <video playsinline="" muted="" poster="" autoplay loop class="video-w">
+            <source src="images/mainVideo-w.mp4" type="video/mp4" />
+          </video>
+          <video playsinline="" muted="" poster="" autoplay loop display="none" class="video-m">
+            <source src="images/mainVideo-m.mp4" type="video/mp4" />
+          </video>
         </div>
       </div>
       <!-- 우리 독도 -->
@@ -322,15 +327,7 @@
         </div>
       </div>
       <!-- 독도 친구들 -->
-      <div class="friends" id="page-2">
-        <div class="inner">
-          <div class="title">
-            <h3>독도 친구들</h3>
-            <img src="images/dokdo_icon.png" alt="독도 아이콘" />
-          </div>
-          <img src="images/4friends/bg650.jpg" alt="배경" />
-        </div>
-      </div>
+
       <!-- 독도 가는길 -->
       <div class="go" id="page-3">
         <div class="title">
