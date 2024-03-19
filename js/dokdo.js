@@ -73,6 +73,13 @@ window.addEventListener("load", function () {
       disableOnInteraction: false,
     },
   });
+  // 독도 가는길 예매페이지
+  this.document.getElementById("go-ulleung").addEventListener("click", function() {
+    // 새로운 페이지 URL
+    var goUlleung = "ship_reservation.html"
+    // 새로운 페이지로 이동
+    window.location.href = goUlleung;
+});
   //__________________________________________________________________________________________
   // 독도 행사 swiper
   var swiper = new Swiper(".sw-event", {
