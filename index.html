@@ -192,7 +192,12 @@
       <!-- 비디오 -->
       <div class="visual">
         <div class="visual_area">
-          <video src="images/mainVideo.mp4" type="video/mp4" autoplay loop></video>
+          <video playsinline="" muted="" poster="" autoplay loop class="video-w">
+            <source src="images/mainVideo-w.mp4" type="video/mp4" />
+          </video>
+          <video playsinline="" muted="" poster="" autoplay loop display="none" class="video-m">
+            <source src="images/mainVideo-m.mp4" type="video/mp4" />
+          </video>
         </div>
       </div>
       <!-- 우리 독도 -->

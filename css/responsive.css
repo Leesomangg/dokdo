@@ -53,6 +53,16 @@
   }
 }
 @media screen and (max-width: 960px) {
+  /* 비쥬얼 */
+  .video-w {
+    display: none;
+  }
+  .video-m {
+    display: block;
+    width: 100%;
+    max-width: 960px;
+    height: auto;
+  }
   /* 우리독도 >> 이유 */
   .reason-img img {
     width: 60%;
