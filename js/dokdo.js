@@ -74,12 +74,12 @@ window.addEventListener("load", function () {
     },
   });
   // 독도 가는길 예매페이지
-  this.document.getElementById("go-ulleung").addEventListener("click", function() {
+  this.document.getElementById("go-ulleung").addEventListener("click", function () {
     // 새로운 페이지 URL
-    var goUlleung = "ship_reservation.html"
+    var goUlleung = "ship_reservation.html";
     // 새로운 페이지로 이동
     window.location.href = goUlleung;
-});
+  });
   //__________________________________________________________________________________________
   // 독도 행사 swiper
   var swiper = new Swiper(".sw-event", {
@@ -92,15 +92,15 @@ window.addEventListener("load", function () {
       clickable: true,
     },
     breakpoints: {
-      1375: {
+      1100: {
         spaceBetween: 25,
         slidesPerView: 4,
       },
-      1040: {
+      870: {
         spaceBetween: 25,
         slidesPerView: 3,
       },
-      690: {
+      630: {
         spaceBetween: 25,
         slidesPerView: 2,
       },
@@ -108,13 +108,27 @@ window.addEventListener("load", function () {
   });
   // 독도 md swiper
   var swiper = new Swiper(".sw-md", {
-    slidesPerView: 4,
+    slidesPerView: 1,
     loop: true,
-    spaceBetween: 30,
+    spaceBetween: 25,
     freeMode: true,
     pagination: {
       el: ".swiper-pagination-md",
       clickable: true,
+    },
+    breakpoints: {
+      1430: {
+        spaceBetween: 25,
+        slidesPerView: 4,
+      },
+      1080: {
+        spaceBetween: 25,
+        slidesPerView: 3,
+      },
+      690: {
+        spaceBetween: 25,
+        slidesPerView: 2,
+      },
     },
   });
   // ============= footer family-site

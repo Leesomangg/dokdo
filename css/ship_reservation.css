@@ -60,7 +60,7 @@ body {
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
-  padding: 30px 50px;
+  padding: 30px 20px;
 }
 /* 헤더 */
 header > .inner {
@@ -78,4 +78,26 @@ header > .inner {
 }
 .reserved > a p {
   font-size: 2rem;
+}
+.go-contents > .inner {
+  /* width: 50%; */
+  max-width: 700px;
+  background-color: antiquewhite;
+}
+.go-contents > .inner > form{
+  margin: 0 auto;
+  text-align: center;
+}
+.place_select_list {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+.place_select_list .title{
+  font-size: 1.8rem;
+}
+.how{
+  display: flex;
+  flex-direction: column;
+  font-size: 2.0rem;
 }
