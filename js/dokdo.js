@@ -46,6 +46,25 @@ window.addEventListener("load", function () {
       logoB.style.display = "none";
     }
   });
+  // 시간
+  var clockTarget = document.getElementById("clock");
+  function clock() {
+    var date = new Date();
+    var month = date.getMonth();
+    var clockDate = date.getDate();
+    var day = date.getDay();
+    var week = ["일", "월", "화", "수", "목", "금", "토"];
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    clockTarget.innerText = `${month + 1}월 ${clockDate}일 ${week[day]}요일 ` + `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes}`;
+    clockTarget.style.color = "#191919";
+  }
+  function init() {
+    clock();
+    setInterval(clock, 1000);
+  }
+  init();
+
   //메뉴
   let nav = this.document.querySelector(".nav-m");
   let btMenu = this.document.querySelector(".bt-menu");
