@@ -111,15 +111,15 @@ window.addEventListener("load", function () {
       clickable: true,
     },
     breakpoints: {
-      1375: {
+      1100: {
         spaceBetween: 25,
         slidesPerView: 4,
       },
-      1040: {
+      870: {
         spaceBetween: 25,
         slidesPerView: 3,
       },
-      690: {
+      630: {
         spaceBetween: 25,
         slidesPerView: 2,
       },
@@ -127,13 +127,27 @@ window.addEventListener("load", function () {
   });
   // 독도 md swiper
   var swiper = new Swiper(".sw-md", {
-    slidesPerView: 4,
+    slidesPerView: 1,
     loop: true,
-    spaceBetween: 30,
+    spaceBetween: 25,
     freeMode: true,
     pagination: {
       el: ".swiper-pagination-md",
       clickable: true,
+    },
+    breakpoints: {
+      1430: {
+        spaceBetween: 25,
+        slidesPerView: 4,
+      },
+      1080: {
+        spaceBetween: 25,
+        slidesPerView: 3,
+      },
+      690: {
+        spaceBetween: 25,
+        slidesPerView: 2,
+      },
     },
   });
   // ============= footer family-site

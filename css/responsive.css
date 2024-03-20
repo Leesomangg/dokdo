@@ -9,6 +9,16 @@
   header > .inner {
     padding: 0 2rem;
   }
+  /* 독도 행사 */
+  .event-inner {
+    margin-left: 8%;
+  }
+}
+@media screen and (max-width: 1430px) {
+  /* 독도 굿즈 */
+  .md-right {
+    width: 80%;
+  }
 }
 @media screen and (max-width: 1390px) {
   /* 독도가는길 */
@@ -31,6 +41,24 @@
     margin: 30px 0 50px;
   }
 }
+@media screen and (max-width: 1200px) {
+  /* 독도 행사 */
+  .event-right > .sw-event .swiper-slide span {
+    font-size: 2.2rem;
+  }
+}
+@media screen and (max-width: 1099px) {
+  /* 독도 행사 */
+  .event-right > .sw-event .swiper-slide span {
+    font-size: 2.4rem;
+  }
+}
+@media screen and (max-width: 1080px) {
+  /* 독도 굿즈 */
+  .md-right {
+    width: 75%;
+  }
+}
 @media screen and (max-width: 1024px) {
   /* 헤더 */
   nav {
@@ -50,6 +78,19 @@
   }
   .header-right-m {
     display: flex;
+  }
+}
+@media screen and (max-width: 1000px) {
+  /* 독도 행사 */
+  .event-inner {
+    margin-left: 5%;
+  }
+  .event-right {
+    width: 80%;
+  }
+  /* 독도 굿즈 */
+  .md-inner {
+    margin-left: 5%;
   }
 }
 @media screen and (max-width: 960px) {
@@ -77,8 +118,13 @@
     flex-direction: column-reverse;
     gap: 0rem;
   }
+  /* 독도 행사 */
+  .event-right > .sw-event .swiper-slide span {
+    font-size: 2.2rem;
+  }
 }
 @media screen and (max-width: 900px) {
+  /* 독도 가는길 */
   .go > .go-bg > .inner {
     padding: 0 20px;
   }
@@ -128,6 +174,18 @@
     right: -5px;
   }
 }
+@media screen and (max-width: 870px) {
+  /* 독도 굿즈 */
+  .md-right {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 869px) {
+  /* 독도 행사 */
+  .event-right > .sw-event .swiper-slide span {
+    font-size: 2.4rem;
+  }
+}
 @media screen and (max-width: 800px) {
   /* 우리독도 >> 이유 */
   .reason-img img {
@@ -147,11 +205,62 @@
   .go > .go-bg > .inner {
     padding: 0 15px;
   }
+  /* 독도 굿즈 */
+  .md-right > .sw-md .swiper-slide img {
+    height: 27%;
+  }
+}
+@media screen and (max-width: 770px) {
+  /* 독도 행사 */
+  .event-inner {
+    margin-left: 10px;
+  }
+  .event-right {
+    width: 75%;
+  }
+  .event-left > h2 {
+    font-size: 2.8rem;
+  }
+  .event-left > .event-morebt > a > p {
+    font-size: 1.2rem;
+  }
+  .event-left > .event-morebt > a > img {
+    width: 90%;
+  }
+  .event-right > .sw-event .swiper-slide p {
+    font-size: 1.2rem;
+  }
+  /* 독도 굿즈 */
+  .md-left > h2 {
+    font-size: 2.8rem;
+  }
+  .md-left > p {
+    font-size: 1.3rem;
+    white-space: wrap;
+  }
+  .md-inner {
+    margin-left: 10px;
+  }
+  .md-left > .md-morebt > a > p {
+    font-size: 1.2rem;
+  }
+  .md-left > .md-morebt > a > img {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 750px) {
   /* 독도가는길 */
   .go > .go-bg > .inner {
     padding: 0 10px;
+  }
+}
+@media screen and (max-width: 730px) {
+  /* 독도 굿즈 */
+  .md-right > .sw-md .swiper-slide img {
+    height: 25%;
+  }
+  .md-left > p {
+    font-size: 1.2rem;
   }
 }
 @media screen and (max-width: 700px) {
@@ -260,6 +369,18 @@
     padding: 5px 10px;
   }
 }
+@media screen and (max-width: 690px) {
+  /* 독도 굿즈 */
+  .md-right > .sw-md .swiper-slide img {
+    height: 45%;
+  }
+}
+@media screen and (max-width: 680px) {
+  /* 독도 굿즈 */
+  .md-right {
+    width: 65%;
+  }
+}
 @media screen and (max-width: 650px) {
   /* 독도가는길 */
   .go-map-list-dokdo > span {
@@ -280,6 +401,23 @@
     position: absolute;
     top: -20px;
     right: 10px;
+  }
+  /* 독도 이벤트 */
+  .promo > .inner > .promo-contents {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 629px) {
+  /* 독도 행사 */
+  .event-right > .sw-event .swiper-slide span {
+    font-size: 2.4rem;
+  }
+  .event-right {
+    width: 70%;
+  }
+  .event-right > .sw-event .swiper-slide p {
+    font-size: 1.3rem;
   }
 }
 @media screen and (max-width: 600px) {
@@ -375,6 +513,22 @@
     margin-top: 10px;
     padding: 5px 10px;
   }
+  /* 독도 굿즈 */
+  .md-right > .sw-md .swiper-slide img {
+    height: 40%;
+  }
+}
+@media screen and (max-width: 520px) {
+  /* 독도 행사 */
+  .event-right {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 510px) {
+  /* 독도 굿즈 */
+  .md-right > .sw-md .swiper-slide img {
+    height: 35%;
+  }
 }
 @media screen and (max-width: 500px) {
   /* 독도가는길 */
@@ -416,6 +570,10 @@
     margin-top: 10px;
     padding: 5px 10px;
     font-size: 1.2rem;
+  }
+  /* 독도 굿즈 */
+  .md-left > p {
+    font-size: 1.1rem;
   }
 }
 @media screen and (max-width: 450px) {
@@ -473,6 +631,32 @@
     padding: 5px 10px;
     font-size: 1.2rem;
   }
+  /* 독도 굿즈 */
+  .md-right > .sw-md .swiper-slide img {
+    height: 30%;
+  }
+}
+@media screen and (max-width: 440px) {
+  /* 독도 행사 */
+  .event-right {
+    width: 60%;
+  }
+  .event-left > h2 {
+    font-size: 2.5rem;
+  }
+  /* 독도 굿즈 */
+  .md-left > h2 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 410px) {
+  /* 독도 행사 */
+  .event-right > .sw-event .swiper-slide span {
+    font-size: 2.2rem;
+  }
+  .event-right > .sw-event .swiper-slide p {
+    font-size: 1.2rem;
+  }
 }
 @media screen and (max-width: 400px) {
   /* 독도 가는길 */
@@ -525,6 +709,30 @@
     padding: 5px 10px;
     font-size: 1.1rem;
   }
+  /* 독도 행사 */
+  .event-right {
+    width: 55%;
+  }
+  .event-right > .sw-event .swiper-slide span {
+    font-size: 2rem;
+  }
+  .event-right > .sw-event .swiper-slide p {
+    font-size: 1.1rem;
+    padding: 0 12px;
+  }
+  /* 독도 굿즈 */
+  .md-right {
+    width: 60%;
+  }
+  .md-right > .sw-md .swiper-slide img {
+    height: 25%;
+  }
+}
+@media screen and (max-width: 380px) {
+  /* 독도 굿즈 */
+  .md-right > .sw-md .swiper-slide img {
+    height: 21%;
+  }
 }
 @media screen and (max-width: 350px) {
   /* 독도가는길 예매 */
@@ -558,5 +766,26 @@
   /* 독도 가는길 */
   .go-map-top .go-map-top-list li p {
     font-size: 1rem;
+  }
+  /* 독도 행사 */
+  .event-right > .sw-event .swiper-slide span {
+    font-size: 1.8rem;
+  }
+  .event-right > .sw-event .swiper-slide p {
+    font-size: 1rem;
+    padding: 0 10px;
+    line-height: 22px;
+  }
+  /* 독도 굿즈 */
+  .md-right > .sw-md .swiper-slide img {
+    height: 20%;
+  }
+  .md-right > .sw-md .swiper-slide span {
+    font-size: 1.8rem;
+  }
+  .md-right > .sw-md .swiper-slide p {
+    font-size: 1rem;
+    padding: 0 10px;
+    line-height: 22px;
   }
 }
