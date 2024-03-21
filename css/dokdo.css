@@ -740,7 +740,7 @@ header > .inner {
   margin-left: 8%;
   display: flex;
   flex-direction: row;
-  gap: 5px;
+  /* gap: 5px; */
 }
 /* 독도 MD 왼쪽 */
 .md-left {
@@ -801,13 +801,13 @@ header > .inner {
   /* padding-bottom: 50px; */
 }
 .md-right > .sw-md .swiper-slide img {
-  /* width: 60%; */
-  /* height: auto; */
+  width: 60%;
+  height: auto;
   width: auto;
   height: 30%;
   display: block;
   margin: 0 auto;
-  margin: 100px 0 50px 0;
+  margin: 50px 0 40px 0;
 }
 /* .md-right > .sw-md .sw-md2 img {
   width: 30%;
