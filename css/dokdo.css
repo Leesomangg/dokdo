@@ -430,22 +430,10 @@ header > .inner {
   transform: translateY(0);
 }
 /* 페이지네이션 */
-#app {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 0;
-  left: 0;
-  width: 18rem;
-  height: 2rem;
-  margin: 0 auto;
-  overflow: hidden;
-  z-index: 1;
-}
-.swiper-pagination {
+.swReason .swiper-pagination {
   margin-right: 5rem;
 }
-.swiper-pagination-bullet {
+.swReason .swiper-pagination-bullet {
   width: 1.5rem;
   height: 1.5rem;
   margin-left: 1rem;
@@ -454,7 +442,7 @@ header > .inner {
   cursor: pointer;
   transition: 0.3s ease height;
 }
-.swiper-pagination-bullet-active {
+.swReason .swiper-pagination-bullet-active {
   height: 40px;
   cursor: auto;
 }
@@ -538,9 +526,79 @@ header > .inner {
   --swiper-theme-color: #0a004e;
 }
 /* 독도 친구들 */
-.friends-contents img {
+.friends-contents {
+  position: relative;
+  display: block;
+  position: relative;
+}
+.friends-contents .friends-contents-bg img {
   width: 100%;
   height: auto;
+  /* width: auto; */
+  /* height: 100%; */
+}
+.friends-contents-list img {
+  cursor: pointer;
+}
+.friends-contents-list .fds1 {
+  position: absolute;
+  top: 8%;
+  left: 10%;
+  width: 10%;
+}
+.friends-contents-list .fds2 {
+  position: absolute;
+  top: 21%;
+  right: 11%;
+  width: 4%;
+}
+.friends-contents-list .fds3 {
+  position: absolute;
+  top: 38%;
+  left: 28%;
+  width: 8%;
+}
+.friends-contents-list .fds4 {
+  position: absolute;
+  top: 25%;
+  right: 35%;
+  width: 7%;
+}
+.friends-contents-list .fds5 {
+  position: absolute;
+  top: 10%;
+  right: 45%;
+  width: 7%;
+}
+.friends-contents-list .fds6 {
+  position: absolute;
+  top: 15%;
+  left: 35%;
+  width: 7%;
+}
+.friends-contents-list .fds7 {
+  position: absolute;
+  bottom: 10%;
+  right: 35%;
+  width: 7%;
+}
+.friends-contents-list .fds8 {
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+  width: 8%;
+}
+.friends-contents-list .fds9 {
+  position: absolute;
+  bottom: 40%;
+  right: 20%;
+  width: 10%;
+}
+.friends-contents-list .fds10 {
+  position: absolute;
+  bottom: 30%;
+  left: 30%;
+  width: 8%;
 }
 /* 독도 가는길 */
 .go {
@@ -549,7 +607,7 @@ header > .inner {
 .go-bg {
   width: 100%;
   background-color: #6283a4;
-  padding-top: 10px;
+  padding-top: 30px;
 }
 .go-bg .inner {
   width: 100%;
@@ -595,6 +653,7 @@ header > .inner {
   border-radius: 5px;
   color: #fff;
   font-family: "GmarketSansLight";
+  cursor: pointer;
 }
 /* go-map bottom */
 .go-map-bottom {
@@ -614,7 +673,7 @@ header > .inner {
   font-size: 2rem;
   position: absolute;
   top: 40%;
-  left: 50%;
+  left: 40%;
   transform: translateX(-50%);
 }
 .go-map-dockdo {
@@ -667,10 +726,14 @@ header > .inner {
   width: 100%;
   height: auto;
 }
+.go-map-ulleung img {
+  width: 80% !important;
+}
 /* 독도 굿즈 */
 .md {
   overflow: hidden;
-  padding-top: 100px;
+  padding-top: 130px;
+  padding-bottom: 50px;
 }
 .md-inner {
   width: 100%;
@@ -695,7 +758,15 @@ header > .inner {
   white-space: nowrap;
   padding-bottom: 10px;
 }
-.md-left > p {
+.md-money {
+  display: flex;
+}
+.md-left > .md-money > .md-money1 {
+  font-family: "GmarketSansLight";
+  font-size: 1.3rem;
+  white-space: nowrap;
+}
+.md-left > .md-money > .md-money2 {
   font-family: "GmarketSansLight";
   font-size: 1.3rem;
   white-space: nowrap;
@@ -727,7 +798,7 @@ header > .inner {
   margin: 10px 1%;
   background-color: #fff;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
 }
 .md-right > .sw-md .swiper-slide img {
   /* width: 60%; */
@@ -792,6 +863,7 @@ header > .inner {
   width: 100%;
   height: 150px;
   display: flex;
+  padding: 0 10px;
   /* background-color: bisque; */
 }
 .ft-logo {
@@ -826,7 +898,7 @@ header > .inner {
   width: 200px;
   height: 40px;
   background-color: rgba(0, 0, 0, 0.7);
-  right: 0;
+  right: 10px;
   border-radius: 10px;
 }
 .family > a {

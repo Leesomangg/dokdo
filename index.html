@@ -201,33 +201,32 @@
         </div>
         <!-- 날씨 -->
         <div class="weather">
-        <div class="weather_area">
-          <ul class="weather_info">
-            <li class="now-clock">
-              <div class="weather_icon"><i class="xi-clock" style="color: #3333;" ;></i></div>
-              <div id="clock" class="weather_txt" style="color: gray">00:00</div>
-            </li>
-            <li>
-                <span class="weather_icon"><i class="xi-brightness" style="font-size: 2.5rem;"></i></span>
-                </span class="weather_txt">맑음 <br> 3&#8451</span>
-            </li>
-            <li>
-              <div class="weather_icon"><i class="xi-sun"></i>
-              </div> <div class="weather_txt">06:48</div>
-            </li>
-            <li>
-              <div class="weather_icon"><i class="xi-sunset-down"></i></div>
-              <div class="weather_txt">18:04</div>
-            </li>
-          </ul>
+          <div class="weather_area">
+            <ul class="weather_info">
+              <li class="now-clock">
+                <div class="weather_icon"><i class="xi-clock" style="color: #3333"></i></div>
+                <div id="clock" class="weather_txt" style="color: gray">00:00</div>
+              </li>
+              <li>
+                <span class="weather_icon"><i class="xi-brightness" style="font-size: 2.5rem"></i></span>
+                <span class="weather_txt">맑음 <br />3&#8451;</span>
+              </li>
+              <li>
+                <div class="weather_icon"><i class="xi-sun"></i></div>
+                <div class="weather_txt">06:48</div>
+              </li>
+              <li>
+                <div class="weather_icon"><i class="xi-sunset-down"></i></div>
+                <div class="weather_txt">18:04</div>
+              </li>
+            </ul>
+          </div>
         </div>
+        <!-- 하단 아이콘 -->
+        <section id="section05" class="demo">
+          <a href="#page-1"><span></span></a>
+        </section>
       </div>
-      <!-- 하단 아이콘 -->
-      <section id="section05" class="demo">
-        <a href="#page-1"><span></span></a>
-      </section>
-    </div>
-
       <!-- 우리 독도 -->
       <div class="we" id="page-1">
         <!-- 공통타이틀 -->
@@ -302,11 +301,10 @@
             </div>
             <div class="swiper-pagination"></div>
           </div>
-                <!-- 하단 아이콘 -->
-      <section id="section05" class="demo">
-        <a href="#page-6"><span></span></a>
-      </section>
-    </div>
+          <!-- 하단 아이콘 -->
+          <section id="section05" class="demo">
+            <a href="#page-6"><span></span></a>
+          </section>
         </div>
       </div>
       <!-- 독도 행사 -->
@@ -331,7 +329,7 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <img src="images/3event/d1.png" alt="D" />
-                  <div>독도 2행시</div>
+                  <span>독도 2행시</span>
                   <a href="#"><p>+ MORE</p></a>
                 </div>
                 <div class="swiper-slide">
@@ -367,7 +365,21 @@
             <img src="images/dokdo_icon.png" alt="독도 아이콘" />
           </div>
           <div class="friends-contents">
-            <img src="images/4friends/bg650.jpg" alt="배경" />
+            <div class="friends-contents-bg">
+              <img src="images/4friends/bg700.jpg" alt="배경" />
+            </div>
+            <div class="friends-contents-list">
+              <img src="images/4friends/galmegi.png" alt="괭이갈매기" class="fds1" />
+              <img src="images/4friends/hwangro.png" alt="황로" class="fds2" />
+              <img src="images/4friends/gangchi.png" alt="강치" class="fds3" />
+              <img src="images/4friends/heagook.png" alt="해국" class="fds4" />
+              <img src="images/4friends/sacheolnamu.png" alt="사철나무" class="fds5" />
+              <img src="images/4friends/semgirincho.png" alt="섬기린초" class="fds6" />
+              <img src="images/4friends/bucheabbulsanho.png" alt="부채뿔산호" class="fds7" />
+              <img src="images/4friends/dalpeng.png" alt="흰갯민숭달팽이" class="fds8" />
+              <img src="images/4friends/dohwasaewoo.png" alt="도화새우" class="fds9" />
+              <img src="images/4friends/hockdom.png" alt="혹돔" class="fds10" />
+            </div>
           </div>
         </div>
       </div>
@@ -433,7 +445,11 @@
         <div class="md-inner">
           <div class="md-left">
             <h2>독도 MD</h2>
-            <p>수익금은 독도를 지키는데 쓰입니다.</p>
+            <div class="md-money">
+              <p class="md-money1">수익금은 독도를</p>
+              &nbsp;
+              <p class="md-money2">지키는데 쓰입니다.</p>
+            </div>
             <!-- swiper 페이지네이션 -->
             <div class="swiper-pagination-md"></div>
             <div class="md-morebt">
