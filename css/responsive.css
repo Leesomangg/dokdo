@@ -139,7 +139,7 @@
     font-size: 1.8rem;
     position: absolute;
     top: 40%;
-    left: 45%;
+    left: 40%;
     transform: translateX(-50%);
   }
   .go-map-dockdo > a > .dong {
@@ -176,8 +176,8 @@
 }
 @media screen and (max-width: 870px) {
   /* 독도 굿즈 */
-  .md-right {
-    width: 70%;
+  .md-money {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 869px) {
@@ -206,9 +206,9 @@
     padding: 0 15px;
   }
   /* 독도 굿즈 */
-  .md-right > .sw-md .swiper-slide img {
+  /* .md-right > .sw-md .swiper-slide img {
     height: 27%;
-  }
+  } */
 }
 @media screen and (max-width: 770px) {
   /* 독도 행사 */
@@ -253,23 +253,34 @@
   .go > .go-bg > .inner {
     padding: 0 10px;
   }
+  /* 푸터 */
+  .footer-middle {
+    right: 230px;
+  }
 }
 @media screen and (max-width: 730px) {
   /* 독도 굿즈 */
-  .md-right > .sw-md .swiper-slide img {
+  /* .md-right > .sw-md .swiper-slide img {
     height: 25%;
-  }
+  } */
   .md-left > p {
     font-size: 1.2rem;
+  }
+  /* 푸터 */
+  .family {
+    width: 170px;
+  }
+  .footer-middle {
+    right: 200px;
   }
 }
 @media screen and (max-width: 700px) {
   /* 비디오 */
-  .weather{
+  .weather {
     display: none;
   }
-   /* 하단 스크롤 */
-   .demo a {
+  /* 하단 스크롤 */
+  .demo a {
     background-color: pink;
     position: absolute;
     bottom: 20px;
@@ -279,15 +290,15 @@
     -webkit-transform: translate(0, -50%);
     transform: translate(-50%, -50%);
     color: #fff;
-    font : normal 400 20px/1 'Josefin Sans', sans-serif;
-    letter-spacing: .1em;
+    font: normal 400 20px/1 "Josefin Sans", sans-serif;
+    letter-spacing: 0.1em;
     text-decoration: none;
-    transition: opacity .3s;
+    transition: opacity 0.3s;
   }
   .demo a:hover {
-    opacity: .5;
+    opacity: 0.5;
   }
-   #section05 a {
+  #section05 a {
     padding-top: 70px;
   }
   #section05 a span {
@@ -331,7 +342,6 @@
       opacity: 0;
     }
   }
-
   /* 독도가는길 */
   .go-map-list-dokdo > span {
     content: "";
@@ -368,17 +378,22 @@
     margin-top: 15px;
     padding: 5px 10px;
   }
-}
-@media screen and (max-width: 690px) {
-  /* 독도 굿즈 */
-  .md-right > .sw-md .swiper-slide img {
-    height: 45%;
+  /* 푸터 */
+  .footer > .inner {
+    height: 200px;
+  }
+  .family {
+    top: 70px;
+    right: 10px;
+  }
+  .footer-middle {
+    right: 10px;
   }
 }
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 670px) {
   /* 독도 굿즈 */
-  .md-right {
-    width: 65%;
+  .md-right > .sw-md .swiper-slide img {
+    height: 40%;
   }
 }
 @media screen and (max-width: 650px) {
@@ -513,19 +528,16 @@
     margin-top: 10px;
     padding: 5px 10px;
   }
-  /* 독도 굿즈 */
-  .md-right > .sw-md .swiper-slide img {
-    height: 40%;
-  }
 }
 @media screen and (max-width: 520px) {
   /* 독도 행사 */
   .event-right {
     width: 65%;
   }
-}
-@media screen and (max-width: 510px) {
   /* 독도 굿즈 */
+  .md-right {
+    width: 70%;
+  }
   .md-right > .sw-md .swiper-slide img {
     height: 35%;
   }
@@ -574,6 +586,14 @@
   /* 독도 굿즈 */
   .md-left > p {
     font-size: 1.1rem;
+  }
+  /* 푸터 */
+  .ft-logo {
+    position: absolute;
+    top: 30px;
+  }
+  .family {
+    top: 60px;
   }
 }
 @media screen and (max-width: 450px) {
@@ -635,6 +655,9 @@
   .md-right > .sw-md .swiper-slide img {
     height: 30%;
   }
+  .md-right {
+    width: 65%;
+  }
 }
 @media screen and (max-width: 440px) {
   /* 독도 행사 */
@@ -675,7 +698,7 @@
   }
   .go-map-list-dokdo > p {
     position: absolute;
-    top: 13px;
+    top: 10px;
     right: 15px;
     font-size: 1.2rem;
   }
@@ -720,18 +743,48 @@
     font-size: 1.1rem;
     padding: 0 12px;
   }
+}
+@media screen and (max-width: 390px) {
   /* 독도 굿즈 */
-  .md-right {
-    width: 60%;
-  }
   .md-right > .sw-md .swiper-slide img {
     height: 25%;
   }
+  .md-right {
+    width: 60%;
+  }
 }
-@media screen and (max-width: 380px) {
-  /* 독도 굿즈 */
-  .md-right > .sw-md .swiper-slide img {
-    height: 21%;
+@media screen and (max-width: 360px) {
+  /* 푸터 */
+  .footer-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+  }
+  .footer-middle > .address {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .footer-middle > .address > span {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .footer-middle > .copyright {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .family {
+    width: 140px;
+  }
+  .family > a {
+    font-size: 1.1rem;
+    padding-left: 13px;
+  }
+  .family ul {
+    padding: 5px 13px;
+  }
+  .family ul li a {
+    font-size: 1.1rem;
   }
 }
 @media screen and (max-width: 350px) {
@@ -778,7 +831,7 @@
   }
   /* 독도 굿즈 */
   .md-right > .sw-md .swiper-slide img {
-    height: 20%;
+    height: 23%;
   }
   .md-right > .sw-md .swiper-slide span {
     font-size: 1.8rem;

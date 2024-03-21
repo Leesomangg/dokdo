@@ -129,7 +129,7 @@ window.addEventListener("load", function () {
   var swiper = new Swiper(".sw-md", {
     slidesPerView: 1,
     loop: true,
-    spaceBetween: 25,
+    spaceBetween: 20,
     freeMode: true,
     pagination: {
       el: ".swiper-pagination-md",
@@ -144,7 +144,7 @@ window.addEventListener("load", function () {
         spaceBetween: 25,
         slidesPerView: 3,
       },
-      690: {
+      670: {
         spaceBetween: 25,
         slidesPerView: 2,
       },
