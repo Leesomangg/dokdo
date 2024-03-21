@@ -75,6 +75,46 @@ h3 {
   width: 100px;
   height: 45px;
 }
+/* top 버튼 */
+.top-button {
+  position: fixed;
+  right: 30px;
+  bottom: 60px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.top-button .gogo_dokdo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px 0;
+}
+.top-button .gogo_dokdo span {
+  font-size: 1.5rem;
+  color: #f9d142;
+}
+#go-top-btn-img {
+  display: none;
+}
+.top-button #go_up_down_bt img {
+  animation: updown 1.5s infinite;
+  /* -webkit-animation: updown 1.5s infinite; */
+  /* 다른 브라우저에서도 작동 될 수 있게 하기 위해 -webkit을 사용. */
+}
+@keyframes updown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 /* ***************헤더 */
 /* 상단 */
 header {
@@ -430,7 +470,6 @@ header > .inner {
   transform: translateY(0);
 }
 /* 페이지네이션 */
-
 .swReason .swiper-pagination {
   margin-right: 5rem;
 }
@@ -527,9 +566,79 @@ header > .inner {
   --swiper-theme-color: #0a004e;
 }
 /* 독도 친구들 */
-.friends-contents img {
+.friends-contents {
+  position: relative;
+  display: block;
+  position: relative;
+}
+.friends-contents .friends-contents-bg img {
   width: 100%;
   height: auto;
+  /* width: auto; */
+  /* height: 100%; */
+}
+.friends-contents-list img {
+  cursor: pointer;
+}
+.friends-contents-list .fds1 {
+  position: absolute;
+  top: 8%;
+  left: 10%;
+  width: 10%;
+}
+.friends-contents-list .fds2 {
+  position: absolute;
+  top: 21%;
+  right: 11%;
+  width: 4%;
+}
+.friends-contents-list .fds3 {
+  position: absolute;
+  top: 38%;
+  left: 28%;
+  width: 8%;
+}
+.friends-contents-list .fds4 {
+  position: absolute;
+  top: 25%;
+  right: 35%;
+  width: 7%;
+}
+.friends-contents-list .fds5 {
+  position: absolute;
+  top: 10%;
+  right: 45%;
+  width: 7%;
+}
+.friends-contents-list .fds6 {
+  position: absolute;
+  top: 15%;
+  left: 35%;
+  width: 7%;
+}
+.friends-contents-list .fds7 {
+  position: absolute;
+  bottom: 10%;
+  right: 35%;
+  width: 7%;
+}
+.friends-contents-list .fds8 {
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+  width: 8%;
+}
+.friends-contents-list .fds9 {
+  position: absolute;
+  bottom: 40%;
+  right: 20%;
+  width: 10%;
+}
+.friends-contents-list .fds10 {
+  position: absolute;
+  bottom: 30%;
+  left: 30%;
+  width: 8%;
 }
 /* 독도 가는길 */
 .go {
@@ -538,7 +647,7 @@ header > .inner {
 .go-bg {
   width: 100%;
   background-color: #6283a4;
-  padding-top: 10px;
+  padding-top: 30px;
 }
 .go-bg .inner {
   width: 100%;
@@ -584,6 +693,7 @@ header > .inner {
   border-radius: 5px;
   color: #fff;
   font-family: "GmarketSansLight";
+  cursor: pointer;
 }
 /* go-map bottom */
 .go-map-bottom {
@@ -603,7 +713,7 @@ header > .inner {
   font-size: 2rem;
   position: absolute;
   top: 40%;
-  left: 50%;
+  left: 40%;
   transform: translateX(-50%);
 }
 .go-map-dockdo {
@@ -656,17 +766,20 @@ header > .inner {
   width: 100%;
   height: auto;
 }
+.go-map-ulleung img {
+  width: 80% !important;
+}
 /* 독도 굿즈 */
 .md {
   overflow: hidden;
-  padding-top: 100px;
+  padding-top: 120px;
 }
 .md-inner {
   width: 100%;
   margin-left: 8%;
   display: flex;
   flex-direction: row;
-  gap: 5px;
+  /* gap: 5px; */
 }
 /* 독도 MD 왼쪽 */
 .md-left {
@@ -684,7 +797,15 @@ header > .inner {
   white-space: nowrap;
   padding-bottom: 10px;
 }
-.md-left > p {
+.md-money {
+  display: flex;
+}
+.md-left > .md-money > .md-money1 {
+  font-family: "GmarketSansLight";
+  font-size: 1.3rem;
+  white-space: nowrap;
+}
+.md-left > .md-money > .md-money2 {
   font-family: "GmarketSansLight";
   font-size: 1.3rem;
   white-space: nowrap;
@@ -716,16 +837,16 @@ header > .inner {
   margin: 10px 1%;
   background-color: #fff;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
 }
 .md-right > .sw-md .swiper-slide img {
-  /* width: 60%; */
-  /* height: auto; */
+  width: 60%;
+  height: auto;
   width: auto;
   height: 30%;
   display: block;
   margin: 0 auto;
-  margin: 100px 0 50px 0;
+  margin: 50px 0 40px 0;
 }
 /* .md-right > .sw-md .sw-md2 img {
   width: 30%;
@@ -781,6 +902,7 @@ header > .inner {
   width: 100%;
   height: 150px;
   display: flex;
+  padding: 0 10px;
   /* background-color: bisque; */
 }
 .ft-logo {
@@ -815,7 +937,7 @@ header > .inner {
   width: 200px;
   height: 40px;
   background-color: rgba(0, 0, 0, 0.7);
-  right: 0;
+  right: 10px;
   border-radius: 10px;
 }
 .family > a {
