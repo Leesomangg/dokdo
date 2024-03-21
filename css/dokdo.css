@@ -75,6 +75,46 @@ h3 {
   width: 100px;
   height: 45px;
 }
+/* top 버튼 */
+.top-button {
+  position: fixed;
+  right: 30px;
+  bottom: 60px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.top-button .gogo_dokdo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px 0;
+}
+.top-button .gogo_dokdo span {
+  font-size: 1.5rem;
+  color: #f9d142;
+}
+#go-top-btn-img {
+  display: none;
+}
+.top-button #go_up_down_bt img {
+  animation: updown 1.5s infinite;
+  /* -webkit-animation: updown 1.5s infinite; */
+  /* 다른 브라우저에서도 작동 될 수 있게 하기 위해 -webkit을 사용. */
+}
+@keyframes updown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 /* ***************헤더 */
 /* 상단 */
 header {
@@ -732,8 +772,7 @@ header > .inner {
 /* 독도 굿즈 */
 .md {
   overflow: hidden;
-  padding-top: 130px;
-  padding-bottom: 50px;
+  padding-top: 120px;
 }
 .md-inner {
   width: 100%;
