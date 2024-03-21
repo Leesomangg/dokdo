@@ -430,22 +430,11 @@ header > .inner {
   transform: translateY(0);
 }
 /* 페이지네이션 */
-#app {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 0;
-  left: 0;
-  width: 18rem;
-  height: 2rem;
-  margin: 0 auto;
-  overflow: hidden;
-  z-index: 1;
-}
-.swiper-pagination {
+
+.swReason .swiper-pagination {
   margin-right: 5rem;
 }
-.swiper-pagination-bullet {
+.swReason .swiper-pagination-bullet {
   width: 1.5rem;
   height: 1.5rem;
   margin-left: 1rem;
@@ -454,7 +443,7 @@ header > .inner {
   cursor: pointer;
   transition: 0.3s ease height;
 }
-.swiper-pagination-bullet-active {
+.swReason .swiper-pagination-bullet-active {
   height: 40px;
   cursor: auto;
 }

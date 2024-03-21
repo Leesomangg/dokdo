@@ -82,7 +82,7 @@ window.addEventListener("load", function () {
   const swReason = new Swiper(".swReason", {
     direction: "vertical",
     pagination: {
-      el: ".swiper-pagination",
+      el: ".swReason .swiper-pagination",
       clickable: true,
     },
     loop: true,
