@@ -1,4 +1,26 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // top 버튼
+  const topBtn = document.getElementById("go_up_down_bt");
+  const goTopImg = document.getElementById("go-top-btn-img");
+  const goBottomImg = document.getElementById("go-bottom-btn-img");
+  topBtn.addEventListener("click", function (event) {
+    event.preventDefault();
+    if (window.scrollY == 0) {
+      window.scrollTo({
+        top: 9999,
+        behavior: "smooth",
+      });
+      goTopImg.style.display = "block";
+      goBottomImg.style.display = "none";
+    } else {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+      goBottomImg.style.display = "block";
+      goTopImg.style.display = "none";
+    }
+  });
   function smoothScroll(targetId) {
     var targetSection = document.querySelector(targetId);
     var targetTop = targetSection.offsetTop;
