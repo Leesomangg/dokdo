@@ -52,7 +52,7 @@ body {
   font-size: 10px;
 }
 /* 공통요소 */
-.wrap {
+.wrapAll {
   position: relative;
 }
 .inner {
@@ -68,7 +68,7 @@ body {
   margin-top: 200px;
   margin-bottom: 50px;
 }
-h3 {
+.page-title2 {
   font-size: 3.2rem;
 }
 .title > img {
@@ -209,6 +209,9 @@ header > .inner {
 }
 .languge li:first-child a {
   padding-top: 2rem;
+}
+.languge li:last-child a {
+  padding-bottom: 2rem;
 }
 /* 모바일 메뉴 버튼 */
 .bt-menu {
@@ -369,14 +372,14 @@ header > .inner {
   color: #fff;
   font-family: "GmarketSansLight";
 }
-.reason-txt > h3 {
+.reason-txt > .page-title2 {
   font-size: 5rem;
   font-weight: 600;
   letter-spacing: -2.5px;
   opacity: 0;
   transform: translateY(100px);
 }
-.swReason .swiper-slide-active .reason-txt > h3 {
+.swReason .swiper-slide-active .reason-txt > .page-title2 {
   transition: all 1s 0.5s;
   opacity: 1;
   transform: translateY(0);
@@ -471,7 +474,7 @@ header > .inner {
 }
 /* 페이지네이션 */
 .swReason .swiper-pagination {
-  margin-right: 5rem;
+  margin-right: 2rem;
 }
 .swReason .swiper-pagination-bullet {
   width: 1.5rem;
@@ -508,7 +511,7 @@ header > .inner {
   align-items: flex-start;
   justify-content: center;
 }
-.event-left > h2 {
+.event-left > .page-title1 {
   font-size: 3.2rem;
   padding-bottom: 50px;
   white-space: nowrap;
@@ -792,7 +795,7 @@ header > .inner {
   align-items: flex-start;
   justify-content: center;
 }
-.md-left > h2 {
+.md-left > .page-title1 {
   font-size: 3.2rem;
   white-space: nowrap;
   padding-bottom: 10px;
