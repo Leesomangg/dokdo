@@ -67,6 +67,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/dokdo.css" />
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/base.css?ver=1.1" /> -->
     <link rel="stylesheet" href="css/responsive.css" />
     <script src="js/html5shiv.js"></script>
     <!-- <script src="js/prefixfree.min.js"></script> -->
@@ -81,6 +83,9 @@
     <!-- js -->
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-1.12.2.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="/js/custom.js"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-B99GBE5KR1"></script>
     <script>
@@ -102,6 +107,10 @@
         <img src="images/topbt/go_bottom.png" alt="go_bottom" id="go-bottom-btn-img" />
         <img src="images/topbt/go_top.png" alt="go_top" id="go-top-btn-img" />
       </a>
+      <div class="gogo_dokdo">
+        <a href="ship_reservation.html" class="gogo_dokdo">
+          <img src="images/topbt/go_dokdo.png" alt="gogo_dokdo" />
+          <span>독도로 떠나기</span>
       <div class="gogo_dokdo-list">
         <a href="ship_reservation.html" class="gogo_dokdo">
           <img src="images/topbt/go_dokdo.png" alt="gogo_dokdo" />
@@ -110,7 +119,7 @@
       </div>
     </div>
     <!-- 전체 레이아웃 -->
-    <div id="wrap">
+    <div id="wrapAll">
       <!-- 헤더 -->
       <header>
         <div class="inner">
@@ -247,11 +256,323 @@
       <div class="we" id="page-1">
         <!-- 공통타이틀 -->
         <div class="title">
-          <h3>독도 연대기</h3>
+          <p class="page-title2">독도 연대기</p>
           <img src="images/dokdo_icon.png" alt="독도 아이콘" />
         </div>
         <!-- 우리독도 >> 역사  -->
-        <div class="history"></div>
+        <div id="wrap">
+          <section id="container">
+            <!-- lnb/ snb 노출 -->
+            <div class="area_lnb">
+              <div class="inr">
+                <script type="text/javascript">
+                  if (!$("div .snb").find("ul").length) {
+                    $("div .snb").hide();
+                  }
+                </script>
+              </div>
+            </div>
+            <!-- 본문 -->
+            <div id="content">
+              <script type="text/javascript" src="../../js/jquery.timelinr-0.9.7.js"></script>
+              <script type="text/javascript">
+                function timeLink() {
+                  $("#timeline").timelinr({
+                    arrowKeys: "true",
+                  });
+                }
+
+                $(window).resize(function () {
+                  if (this.resizeTO) {
+                    clearTimeout(this.resizeTO);
+                  }
+
+                  this.resizeTO = setTimeout(function () {
+                    $(this).trigger("resizeEnd");
+                  }, 500);
+                });
+
+                $(window).on("resizeEnd", function () {
+                  var cachedWidth = $(window).width();
+                  $(window).resize(function () {
+                    var newWidth = $(window).width();
+                    if (newWidth !== cachedWidth) {
+                      //DO RESIZE HERE
+                      cachedWidth = newWidth;
+                      timeLink();
+                    }
+                  });
+                });
+
+                $(window).load(function () {
+                  timeLink();
+                  $(".area_timeline").addClass("loaded");
+                });
+              </script>
+
+              <div class="inr">
+                <div id="timeline" class="area_timeline">
+                  <div class="time_top">
+                    <div class="time_tab_wrap">
+                      <span class="line"></span>
+                      <div class="time_tab">
+                        <ol id="dates">
+                          <li><a href="#512" class="selected">512</a></li>
+                          <li><a href="#1454">1454</a></li>
+                          <li><a href="#1625">1625</a></li>
+                          <li><a href="#1693">1693</a></li>
+                          <li><a href="#1694">1694</a></li>
+                          <li><a href="#1695">1695</a></li>
+                          <li><a href="#169601">1696</a></li>
+                          <li><a href="#169602">1696</a></li>
+                          <li><a href="#1770">1770</a></li>
+                          <li><a href="#1870">1870</a></li>
+                          <li><a href="#1877">1877</a></li>
+                          <li><a href="#1900">1900</a></li>
+                          <li><a href="#1905">1905</a></li>
+                          <li><a href="#1906">1906</a></li>
+                          <li><a href="#1946">1946</a></li>
+                          <li><a href="#1951">1951</a></li>
+                        </ol>
+                      </div>
+                    </div>
+                    <ul class="time_navigation">
+                      <li><a href="#0" class="prev" id="prev">Prev</a></li>
+                      <li><a href="#0" class="next" id="next">Next</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="time_txt">
+                    <ol id="issues">
+                      <li id="512">
+                        <div>
+                          <em>512</em>
+                          <h6 class="tit02">우산국 복속</h6>
+                          <div class="time_img">
+                            <div class="time_summary">삼국사기</div>
+                            <img alt="참고사진" src="images/content/img_chronicle01.jpg" />
+                          </div>
+                          <p>신라 이찬(伊飡) 이사부(異斯夫)가 우산국을 정벌하여 신라가 우산국을 복속합니다. 이로써 울릉도와 독도는 우리 역사와 함께 하기 시작합니다. 『동국문헌비고』 (1770년)에는 "울릉(울릉도)과 우산(독도)은 모두 우산국의 땅"이라고 기술했습니다.</p>
+                        </div>
+                      </li>
+
+                      <li id="1454">
+                        <div>
+                          <em>1454</em>
+                          <h6 class="tit02">『세종실록』「지리지」</h6>
+                          <div class="time_img">
+                            <div class="time_summary">세종실록 지리지</div>
+                            <img alt="참고사진" src="images/content/img_chronicle02.jpg" />
+                          </div>
+                          <p>
+                            조선 초기 관찬서인 『세종실록』「지리지」(1454년)는 울릉도와 독도가 강원도 울진현에 속한 두 섬이라고 기록하고 있습니다. 특히 "우산(독도) 무릉(울릉도)… 두 섬은 서로 멀리 떨어져 있지 않아 날씨가 맑으면 바라볼 수 있다."라고 기록하고 있는데, 울릉도에서 날씨가 맑은 날 육안으로
+                            보이는 섬은 독도가 유일합니다.
+                          </p>
+                        </div>
+                      </li>
+
+                      <li id="1625">
+                        <div>
+                          <em>1625</em>
+                          <h6 class="tit02">
+                            다케시마(竹島, 울릉도)<br />
+                            도해(渡海) 면허
+                          </h6>
+                          <div class="time_img">
+                            <div class="time_summary">울릉도 전경<br /><span>자료제공 : 울릉군청</span></div>
+                            <img alt="참고사진" src="images/content/img_chronicle03.jpg" />
+                          </div>
+                          <p>일본 막부가 돗토리번(지금의 돗토리현)에 살고 있는 오야·무라카와(大谷·村川) 양가에 다케시마(竹島, 울릉도) 도해(渡海)를 면허한 것입니다. 면허를 내린 시기는 1618년, 또는 1625년이라고도 합니다.</p>
+                        </div>
+                      </li>
+
+                      <li id="1693">
+                        <div>
+                          <em>1693</em>
+                          <h6 class="tit02">안용복(安龍福) 일본 납치</h6>
+                          <div class="time_img">
+                            <div class="time_summary">숙종실록</div>
+                            <img alt="참고사진" src="images/content/img_chronicle04.jpg" />
+                          </div>
+                          <p>안용복(安龍福), 박어둔(朴於屯) 두 사람이 울릉도에서 어업을 하다가 울릉도에 온 일본 오야·무라카와(大谷·村川) 양가의 선원들에게 잡혀서 일본으로 끌려간 사건입니다. 이 사건으로 인해 조선과 일본 간의 울릉도 영유권에 대한 분쟁(울릉도 쟁계)이 발생합니다.</p>
+                        </div>
+                      </li>
+
+                      <li id="1694">
+                        <div>
+                          <em>1694</em>
+                          <h6 class="tit02">울릉도 수토제도 시행결정</h6>
+                          <div class="time_img">
+                            <div class="time_summary">울릉도 전경<br /><span>자료제공 : 울릉군청</span></div>
+                            <img alt="참고사진" src="images/content/img_chronicle05.jpg" />
+                          </div>
+                          <p>
+                            안용복 사건으로 인해 일본과 울릉도 영유권에 대한 분쟁(울릉도 쟁계)이 발생하자, 조선 정부는 삼척첨사 장한상(張漢相)을 울릉도에 파견하여 울릉도의 현황을 조사합니다. 그 이후 영의정 남구만의 건의에 따라 2년 걸러 한 번씩 관원을 울릉도에 파견하여 수토*를 하기로 결정합니다.<br />
+                            <span>* 수토 : 무엇을 알아내거나 찾기 위해서 조사하거나 살핌</span>
+                          </p>
+                        </div>
+                      </li>
+
+                      <li id="1695">
+                        <div>
+                          <em>1695</em>
+                          <h6 class="tit02">일본 돗토리번 답변</h6>
+                          <div class="time_img">
+                            <div class="time_summary">돗토리번 답변서 <br />(복제본)</div>
+                            <img alt="참고사진" src="images/content/img_chronicle06.jpg" />
+                          </div>
+                          <p>
+                            일본 막부는 울릉도 영유권에 대해 알아보기 위해 돗토리번에 울릉도의 소속을 질문(12월 24일)했습니다. 이에 대해 돗토리번이 막부에 다케시마(울릉도)와 마쓰시마(독도)가 돗토리번의 소속이 아니라고 답변(12월 25일)함에 따라 막부는 울릉도와 독도가 일본령이 아님을 공식적으로
+                            확인합니다.
+                          </p>
+                        </div>
+                      </li>
+
+                      <li id="169601">
+                        <div>
+                          <em>1696</em>
+                          <h6 class="tit02">1월. 다케시마(울릉도) <br />도해금지령</h6>
+                          <div class="time_img">
+                            <div class="time_summary">다케시마(울릉도)<br />도해금지령(복제본)<br /><span>자료제공 : 독도박물관</span></div>
+                            <img alt="참고사진" src="images/content/img_chronicle07.jpg" />
+                          </div>
+                          <p>일본 막부는 돗토리번을 통해 울릉도와 독도가 일본령이 아님을 확인하고 다케시마(울릉도) 도해금지령을 내렸습니다. (1696년 1월 28일) 이후 조선과의 외교문서를 통해 울릉도가 조선령임을 공식 확인하였습니다. (1699년)</p>
+                        </div>
+                      </li>
+
+                      <li id="169605">
+                        <div>
+                          <em>1696</em>
+                          <h6 class="tit02">5월. 안용복(安龍福) 일본 도해</h6>
+                          <div class="time_img">
+                            <div class="time_summary">원록구병자년<br />조선주착<br />안일권지각서</div>
+                            <img alt="참고사진" src="images/content/img_chronicle08.jpg" />
+                          </div>
+                          <p>안용복(安龍福)이 울릉도에 어업 온 일본 어선을 추격하여 독도(자산도)에서 쫓아버리고, 일본에까지 다녀온 사건입니다. 이때 안용복이 오키섬 관리에게 울릉도와 독도가 조선령이라고 진술한 기록이 「원록9병자년조선주착안일권지각서」에 실려 있습니다.</p>
+                        </div>
+                      </li>
+
+                      <li id="1770">
+                        <div>
+                          <em>1770</em>
+                          <h6 class="tit02">『동국문헌비고』「여지고」</h6>
+                          <div class="time_img">
+                            <div class="time_summary">동국문헌비고</div>
+                            <img alt="참고사진" src="images/content/img_chronicle09.jpg" />
+                          </div>
+                          <p>국왕 영조의 명에 의해 조선의 문물제도를 기록한 관찬서입니다. 이 책에는 "우산도(독도)와 울릉도… 두 섬으로 하나가 바로 우산이다... 「여지지」에 이르기를, 울릉과 우산은 모두 우산국의 땅인데, 우산은 일본이 말하는 송도(松島)다."라고 하였습니다.</p>
+                        </div>
+                      </li>
+
+                      <li id="1870">
+                        <div>
+                          <em>1870</em>
+                          <h6 class="tit02">
+                            일 외무성<br />
+                            『조선국교제시말내탐서』
+                          </h6>
+                          <div class="time_img">
+                            <div class="time_summary">조선국교제<br />시말내탐서(복제본)<br /><span>자료제공 : 독도박물관</span></div>
+                            <img alt="참고사진" src="images/content/img_chronicle10.jpg" />
+                          </div>
+                          <p>1870년 외무성 관리인 사다 하쿠보(佐田白茅) 등이 조선을 시찰한 후 외무성에 제출한 보고서입니다. 이 보고서에는 "다케시마(울릉도)와 마쓰시마(독도)가 조선 부속이 된 사정"이 언급되어 있어, 당시 일본 외무성이 두 섬을 조선 영토로 인식했다는 것을 알 수 있습니다.</p>
+                        </div>
+                      </li>
+                      <li id="1877">
+                        <div>
+                          <em>1877</em>
+                          <h6 class="tit02">「태정관(太政官)지령」</h6>
+                          <div class="time_img">
+                            <div class="time_summary">태정관지령</div>
+                            <img alt="참고사진" src="images/content/img_chronicle11.jpg" />
+                          </div>
+                          <p>
+                            1877년 3월 일본 최고 행정기구인 태정관이 내무성에 울릉도와 독도가 일본령이 아니라고 내린 지령입니다. 태정관은 17세기 에도 막부와 조선 정부 간 교섭(울릉도쟁계) 결과 울릉도와 독도가 일본 소속이 아님이 확인되었다고 판단하고, "다케시마(울릉도) 외 일도(一嶋, 독도)의 건에 대해
+                            본방(本邦, 일본)과는 관계가 없음을 명심할 것"이라는 지시를 내무성에 내렸던 것입니다.
+                          </p>
+                        </div>
+                      </li>
+                      <li id="1900">
+                        <div>
+                          <em>1900</em>
+                          <h6 class="tit02">칙령(勅令) 제41호 반포</h6>
+                          <div class="time_img">
+                            <div class="time_summary">칙령 제41호</div>
+                            <img alt="참고사진" src="images/content/img_chronicle12.jpg" />
+                          </div>
+                          <p>
+                            고종 황제는 칙령으로 '울릉도(欝陵島)를 울도(欝島)로 개칭(改稱)하고 도감(島監)을 군수(郡守)로 개정(改正)한 건(件)'을 제정 반포했습니다. 이 칙령 제2조에 울도군(欝島郡)의 관할 구역으로 울릉전도(欝陵全島), 죽도(竹島)와 함께 석도(石島, 독도)를 규정하여 독도가 울도군의 관할임을
+                            명확히 했습니다.
+                          </p>
+                        </div>
+                      </li>
+                      <li id="1905">
+                        <div>
+                          <em>1905</em>
+                          <h6 class="tit02">시마네현고시 <br />(島根縣告示) 제40호</h6>
+                          <div class="time_img">
+                            <div class="time_summary">시마네현고시<br />제40호(복제본)<br /><span>자료제공 : 독도박물관</span></div>
+                            <img alt="참고사진" src="images/content/img_chronicle13.jpg" />
+                          </div>
+                          <p>
+                            일본의 독도 영토 편입을 알리는 지방 고시입니다. 일본은 1904년 이래 만주와 한반도에 대한 이권을 두고 러시아와 전쟁 과정에서 동해에서의 해전을 위한 군사적 필요성에 의해 1905년 독도를 무주지라 주장하면서 영토편입을 시도하고 시마네현에 고시했습니다. 그러나 시마네현고시
+                            제40호는 일본의 우리나라 국권에 대한 단계적 침탈 과정의 일환이었으며, 우리나라가 오랜 기간에 걸쳐 확고히 확립하여 온 독도 영유권을 침해한 불법행위이므로 국제법적 효력을 가질 수 없습니다.
+                          </p>
+                        </div>
+                      </li>
+                      <li id="1906">
+                        <div>
+                          <em>1906</em>
+                          <h6 class="tit02">3월. 울도군수 심흥택 보고서</h6>
+                          <div class="time_img">
+                            <div class="time_summary">보고서 호외 및 지령 제3호</div>
+                            <img alt="참고사진" src="images/content/img_chronicle14.jpg" />
+                          </div>
+                          <p>
+                            울도군수 심흥택이 울릉도를 방문한 일본 시마네현 관민 조사단으로부터 일본이 독도를 영토 편입했다는 소식을 듣고, 다음 날 강원도 관찰사와 내부(內部, 현재의 안전행정부에 해당)에 보고한 문서입니다. 이 보고서에는 "본군 소속 독도"라고 하여 독도가 울도군의 관할임을 분명히
+                            했습니다.<br />
+                            <u>5월.</u> 의정부 참정대신 지령 제3호 대한제국 최고의 행정기구인 의정부에서 일본의 독도 영토 편입을 부인하는 지령을 내린 것입니다. 의정부는 강원도 관찰사로부터 일본이 독도를 영토 편입했다는 보고를 접하고, 일본의 독도 편입을 부인하는 참정대신(지금의 부총리격)의 지령을
+                            내립니다.
+                          </p>
+                        </div>
+                      </li>
+                      <li id="1946">
+                        <div>
+                          <em>1946</em>
+                          <h6 class="tit02">1월 29일. 연합국최고사령관 <br />각서(SCAPIN) 제677호</h6>
+                          <div class="time_img">
+                            <div class="time_summary">SCAPIN 제677호<br />관련 지도(복제본)<br /><span>자료제공 : 독도박물관</span></div>
+                            <img alt="참고사진" src="images/content/img_chronicle15.jpg" />
+                          </div>
+                          <p>
+                            제2차 세계대전 종전 후 일본의 통치 행정 범위에서 독도를 제외한 각서입니다. 연합국 최고사령관은 일본의 영역에서 "울릉도, 리앙쿠르암(독도)과 제주도는 제외된다."라고 규정하였습니다.
+                            <u>6월 22일.</u>
+                            연합국최고사령관 각서(SCAPIN) 제1033호 연합국 최고사령관이 SCAPIN 제677호에 이어 일본의 선박 및 국민이 독도 또는 독도 주변 12해리 이내에 접근하는 것을 금지한 각서입니다.
+                          </p>
+                        </div>
+                      </li>
+                      <li id="1951">
+                        <div>
+                          <em>1951</em>
+                          <h6 class="tit02">샌프란시스코 강화조약 체결</h6>
+                          <div class="time_img">
+                            <div class="time_summary">샌프란시스코<br />강화조약 체결<br /><span>자료제공 : 미국국립문서기록관리청</span></div>
+                            <img alt="참고사진" src="images/content/img_chronicle16.jpg" />
+                          </div>
+                          <p>
+                            샌프란시스코 강화조약은 제2차 세계대전을 종결하면서 연합국과 일본이 체결한 조약입니다. 이 조약 제2조(a)에서 "일본은 한국의 독립을 인정하고, 제주도, 거문도 및 울릉도를 포함한 한국에 대한 모든 권리, 권원 및 청구권을 포기한다."라고 규정했습니다. 이는 한국의 3천여 개의 도서
+                            가운데 예시에 불과하며, 독도가 직접적으로 명시되지 않았다고 하여 독도가 한국의 영토에 포함되지 않는다고 볼 수 없습니다.
+                          </p>
+                        </div>
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- //본문 -->
+          </section>
+        </div>
         <!-- 우리독도 >> 이유  -->
         <div class="reason">
           <div class="swiper swReason">
@@ -261,7 +582,7 @@
                 <div class="reason-box reason-img-1">
                   <div class="inner">
                     <div class="reason-txt">
-                      <h3>역사적</h3>
+                      <p class="page-title2">역사적</p>
                       <p>
                         일본은 「태정관 지령」 (1877년) 등을 통해 <br />
                         <strong>'울릉도 외 일도(독도)는 일본과 관계없다'</strong>고 했습니다.<br />
@@ -280,7 +601,7 @@
                 <div class="reason-box reason-img-2">
                   <div class="inner">
                     <div class="reason-txt">
-                      <h3>지리적</h3>
+                      <p class="page-title2">지리적</p>
                       <p>
                         독도에서 제일 가까운 섬은 울릉도이고, 맑은 날이면<br />
                         <strong>울릉도에서 독도를 볼 수 있습니다.</strong> <br />
@@ -289,7 +610,7 @@
                       <a href="#">VIEW MORE</a>
                     </div>
                     <div class="reason-img">
-                      <img src="images/2history/bg-geography.png" alt="울릉도에서 바라본 독도" title="울릉도에서 바라본 독도" />
+                      <img src="images/2history/ulleungdoSee.jpg" alt="울릉도에서 바라본 독도" title="울릉도에서 바라본 독도" />
                       <!-- <p><em>울릉도에서 바라 본 독도</em><br />87.4km</p> -->
                     </div>
                   </div>
@@ -300,7 +621,7 @@
                 <div class="reason-box reason-img-3">
                   <div class="inner">
                     <div class="reason-txt">
-                      <h3>법률적</h3>
+                      <p class="page-title2">법률적</p>
                       <p>
                         <!-- 1900년 대한제국은 칙령 제41호를 통해 독도를 울도 군수의 관할 구역으로 규정했습니다.</strong><br> -->
                         광복 후 연합국은 <strong>독도를 울릉도와 함께 일본의 통치영역에서 제외하였습니다.</strong><br />
@@ -328,7 +649,7 @@
       <div class="event" id="page-6">
         <div class="event-inner">
           <div class="event-left">
-            <h2>독도 행사</h2>
+            <p class="page-title1">독도 행사</p>
             <!-- swiper 페이지네이션 -->
             <div class="swiper-pagination-event"></div>
             <div class="event-morebt">
@@ -378,7 +699,7 @@
       <div class="friends" id="page-2">
         <div class="inner">
           <div class="title">
-            <h3>독도 친구들</h3>
+            <p class="page-title2">독도 친구들</p>
             <img src="images/dokdo_icon.png" alt="독도 아이콘" />
           </div>
           <div class="friends-contents">
@@ -403,7 +724,7 @@
       <!-- 독도 가는길 -->
       <div class="go" id="page-3">
         <div class="title">
-          <h3>독도 가는길</h3>
+          <p class="page-title2">독도 가는길</p>
           <img src="images/dokdo_icon.png" alt="독도 아이콘" />
         </div>
         <div class="go-bg">
@@ -461,7 +782,7 @@
       <div class="md" id="page-4">
         <div class="md-inner">
           <div class="md-left">
-            <h2>독도 MD</h2>
+            <p class="page-title1">독도 MD</p>
             <div class="md-money">
               <p class="md-money1">수익금은 독도를</p>
               &nbsp;
@@ -516,7 +837,7 @@
       <div class="promo" id="page-5">
         <div class="inner">
           <div class="title">
-            <h3>독도 이벤트</h3>
+            <p class="page-title2">독도 이벤트</p>
             <img src="images/dokdo_icon.png" alt="독도 아이콘" />
           </div>
           <div class="promo-contents">

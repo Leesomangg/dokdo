@@ -34,7 +34,7 @@
   .swiper-pagination {
     margin-right: 2rem;
   }
-  .reason-txt > h3 {
+  .reason-txt > .page-title1 {
     font-size: 4rem;
   }
   .reason-txt p {
@@ -185,7 +185,7 @@
   .reason-img img {
     width: 70%;
   }
-  .reason-txt > h3 {
+  .reason-txt > .page-title1 {
     font-size: 3.5rem;
   }
   .reason-img p em {
@@ -456,7 +456,7 @@
   .reason-txt {
     text-align: left;
   }
-  .reason-txt > h3 {
+  .reason-txt > .page-title1 {
     font-size: 3rem;
   }
   .reason-txt p {
