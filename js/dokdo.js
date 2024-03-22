@@ -21,8 +21,9 @@ document.addEventListener("DOMContentLoaded", function () {
       goTopImg.style.display = "none";
     }
   });
+  // =================================================
   // =====================================================
-  function smoothScroll(targetId) {
+  https: function smoothScroll(targetId) {
     var targetSection = document.querySelector(targetId);
     var targetTop = targetSection.offsetTop;
     var headerHeight = document.querySelector("header").offsetHeight;
