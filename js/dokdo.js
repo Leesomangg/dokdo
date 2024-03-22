@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
       goTopImg.style.display = "none";
     }
   });
+  // =====================================================
   function smoothScroll(targetId) {
     var targetSection = document.querySelector(targetId);
     var targetTop = targetSection.offsetTop;
@@ -133,16 +134,16 @@ window.addEventListener("load", function () {
       clickable: true,
     },
     breakpoints: {
-      1100: {
-        spaceBetween: 25,
+      1000: {
+        spaceBetween: 15,
         slidesPerView: 4,
       },
-      870: {
-        spaceBetween: 25,
+      750: {
+        spaceBetween: 15,
         slidesPerView: 3,
       },
-      630: {
-        spaceBetween: 25,
+      570: {
+        spaceBetween: 15,
         slidesPerView: 2,
       },
     },
@@ -158,16 +159,16 @@ window.addEventListener("load", function () {
       clickable: true,
     },
     breakpoints: {
-      1430: {
-        spaceBetween: 25,
+      1200: {
+        spaceBetween: 15,
         slidesPerView: 4,
       },
-      1080: {
-        spaceBetween: 25,
+      780: {
+        spaceBetween: 15,
         slidesPerView: 3,
       },
-      670: {
-        spaceBetween: 25,
+      570: {
+        spaceBetween: 15,
         slidesPerView: 2,
       },
     },
