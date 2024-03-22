@@ -86,15 +86,26 @@ h3 {
   align-items: center;
   gap: 30px;
 }
+.top-button .gogo_dokdo-list {
+  border-radius: 100px;
+  padding: 15px 0px 15px 0px;
+  background-color: #f9d142;
+}
 .top-button .gogo_dokdo {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px 0;
+  border-radius: 100px;
+  padding: 5px 0px 10px 0px;
+  background-color: #f9d142;
+}
+.top-button .gogo_dokdo img {
+  width: 50%;
 }
 .top-button .gogo_dokdo span {
   font-size: 1.5rem;
-  color: #f9d142;
+  color: #223055;
 }
 #go-top-btn-img {
   display: none;
@@ -531,15 +542,15 @@ header > .inner {
 }
 .event-right > .sw-event .swiper-slide {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 20px;
-  margin: 10px 1%;
+  margin: 10px 0 10px 1%;
   background-color: #fff;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-  padding-bottom: 70px;
+  padding-bottom: 50px;
 }
 .event-right > .sw-event .swiper-slide img {
   width: 70%;
@@ -828,20 +839,21 @@ header > .inner {
   width: 85%;
 }
 .md-right > .sw-md .swiper-slide {
-  width: 100%;
-  height: auto;
+  /* width: 100%; */
+  /* height: auto; */
+  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 20px;
-  margin: 10px 1%;
+  margin: 10px 0 10px 1%;
   background-color: #fff;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
   /* padding-bottom: 50px; */
 }
 .md-right > .sw-md .swiper-slide img {
-  width: 60%;
-  height: auto;
+  /* width: 60%; */
+  /* height: auto; */
   width: auto;
   height: 30%;
   display: block;
@@ -877,7 +889,7 @@ header > .inner {
   line-height: 26px;
 }
 :root {
-  --swiper-theme-color: #0a004e;
+  --swiper-theme-color: #223055;
 }
 /* 이벤트 */
 .promo > .inner {
