@@ -56,7 +56,6 @@ window.addEventListener("load", function () {
   let header = document.querySelector("header");
   let logoW = document.querySelector(".logo-w");
   let logoB = document.querySelector(".logo-b");
-
   window.addEventListener("scroll", () => {
     scy = window.document.documentElement.scrollTop;
     if (scy > scActive) {
