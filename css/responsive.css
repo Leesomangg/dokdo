@@ -428,8 +428,11 @@
 }
 @media screen and (max-width: 600px) {
   /* 헤더 */
+  header {
+    height: 70px;
+  }
   .logo img {
-    width: 110px;
+    width: 90px;
     height: auto;
   }
   .nav-m {
@@ -814,10 +817,10 @@
   .md-right > .sw-md .swiper-slide img {
     height: 30%;
   }
-    /* 독도 굿즈 */
-    .md-right {
-      width: 55%;
-    }
+  /* 독도 굿즈 */
+  .md-right {
+    width: 55%;
+  }
   /* 독도 행사 */
   .event-right > .sw-event .swiper-slide span {
     font-size: 1.8rem;
