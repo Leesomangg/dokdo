@@ -602,10 +602,6 @@
 }
 @media screen and (max-width: 450px) {
   /* 우리독도 >> 이유 */
-  .reason {
-    /* height: 52.08vw;
-    min-height: 676px; */
-  }
   .reason-txt p {
     margin: 2rem 0 2.5rem 0;
     line-height: 1.6;
