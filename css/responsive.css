@@ -729,6 +729,10 @@
   .event-right {
     width: 60%;
   }
+  /* 독도 굿즈 */
+  .md-right {
+    width: 60%;
+  }
 }
 @media screen and (max-width: 360px) {
   /* 독도 행사 */
@@ -810,11 +814,10 @@
   .md-right > .sw-md .swiper-slide img {
     height: 30%;
   }
-  .md-right {
-    width: 60%;
-  }
-}
-@media screen and (max-width: 350px) {
+    /* 독도 굿즈 */
+    .md-right {
+      width: 55%;
+    }
   /* 독도 행사 */
   .event-right > .sw-event .swiper-slide span {
     font-size: 1.8rem;
