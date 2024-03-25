@@ -209,6 +209,21 @@
           </div>
         </div>
       </nav>
+      <script>
+          //메뉴
+  let nav = this.document.querySelector(".nav-m");
+  let btMenu = this.document.querySelector(".bt-menu");
+  let navClose = this.document.querySelector(".nav-close");
+  btMenu.addEventListener("click", () => {
+    nav.classList.add("nav-m-active");
+  });
+  navClose.addEventListener("click", function () {
+    nav.classList.remove("nav-m-active");
+  });
+  nav.addEventListener("mouseleave", () => {
+    nav.classList.remove("nav-m-active");
+  });
+        </script>
       <!-- 비디오 -->
       <div class="visual">
         <div class="visual_area">
@@ -344,7 +359,7 @@
                       <li id="512">
                         <div>
                           <em>512</em>
-                          <h6 class="tit02">우산국 복속</h6>
+                          <h6 class="tit02"><br>우산국 복속</h6>
                           <div class="time_img">
                             <div class="time_summary">삼국사기</div>
                             <img alt="참고사진" src="images/content/img_chronicle01.jpg" />
@@ -356,7 +371,7 @@
                       <li id="1454">
                         <div>
                           <em>1454</em>
-                          <h6 class="tit02">『세종실록』「지리지」</h6>
+                          <h6 class="tit02"><br>『세종실록』「지리지」</h6>
                           <div class="time_img">
                             <div class="time_summary">세종실록 지리지</div>
                             <img alt="참고사진" src="images/content/img_chronicle02.jpg" />
@@ -386,7 +401,7 @@
                       <li id="1693">
                         <div>
                           <em>1693</em>
-                          <h6 class="tit02">안용복(安龍福) 일본 납치</h6>
+                          <h6 class="tit02"><br>안용복(安龍福) 일본 납치</h6>
                           <div class="time_img">
                             <div class="time_summary">숙종실록</div>
                             <img alt="참고사진" src="images/content/img_chronicle04.jpg" />
@@ -398,7 +413,7 @@
                       <li id="1694">
                         <div>
                           <em>1694</em>
-                          <h6 class="tit02">울릉도 수토제도 시행결정</h6>
+                          <h6 class="tit02"><br>울릉도 수토제도 시행결정</h6>
                           <div class="time_img">
                             <div class="time_summary">울릉도 전경<br /><span>자료제공 : 울릉군청</span></div>
                             <img alt="참고사진" src="images/content/img_chronicle05.jpg" />
@@ -413,7 +428,7 @@
                       <li id="1695">
                         <div>
                           <em>1695</em>
-                          <h6 class="tit02">일본 돗토리번 답변</h6>
+                          <h6 class="tit02"><br>일본 돗토리번 답변</h6>
                           <div class="time_img">
                             <div class="time_summary">돗토리번 답변서 <br />(복제본)</div>
                             <img alt="참고사진" src="images/content/img_chronicle06.jpg" />
@@ -440,7 +455,7 @@
                       <li id="169605">
                         <div>
                           <em>1696</em>
-                          <h6 class="tit02">5월. 안용복(安龍福) 일본 도해</h6>
+                          <h6 class="tit02"><br>5월. 안용복(安龍福) 일본 도해</h6>
                           <div class="time_img">
                             <div class="time_summary">원록구병자년<br />조선주착<br />안일권지각서</div>
                             <img alt="참고사진" src="images/content/img_chronicle08.jpg" />
@@ -452,7 +467,7 @@
                       <li id="1770">
                         <div>
                           <em>1770</em>
-                          <h6 class="tit02">『동국문헌비고』「여지고」</h6>
+                          <h6 class="tit02"><br>『동국문헌비고』「여지고」</h6>
                           <div class="time_img">
                             <div class="time_summary">동국문헌비고</div>
                             <img alt="참고사진" src="images/content/img_chronicle09.jpg" />
@@ -478,7 +493,7 @@
                       <li id="1877">
                         <div>
                           <em>1877</em>
-                          <h6 class="tit02">「태정관(太政官)지령」</h6>
+                          <h6 class="tit02"><br>「태정관(太政官)지령」</h6>
                           <div class="time_img">
                             <div class="time_summary">태정관지령</div>
                             <img alt="참고사진" src="images/content/img_chronicle11.jpg" />
@@ -492,7 +507,7 @@
                       <li id="1900">
                         <div>
                           <em>1900</em>
-                          <h6 class="tit02">칙령(勅令) 제41호 반포</h6>
+                          <h6 class="tit02"><br>칙령(勅令) 제41호 반포</h6>
                           <div class="time_img">
                             <div class="time_summary">칙령 제41호</div>
                             <img alt="참고사진" src="images/content/img_chronicle12.jpg" />
@@ -520,7 +535,7 @@
                       <li id="1906">
                         <div>
                           <em>1906</em>
-                          <h6 class="tit02">3월. 울도군수 심흥택 보고서</h6>
+                          <h6 class="tit02"><br>3월. 울도군수 심흥택 보고서</h6>
                           <div class="time_img">
                             <div class="time_summary">보고서 호외 및 지령 제3호</div>
                             <img alt="참고사진" src="images/content/img_chronicle14.jpg" />
@@ -551,7 +566,7 @@
                       <li id="1951">
                         <div>
                           <em>1951</em>
-                          <h6 class="tit02">샌프란시스코 강화조약 체결</h6>
+                          <h6 class="tit02"><br>샌프란시스코 강화조약 체결</h6>
                           <div class="time_img">
                             <div class="time_summary">샌프란시스코<br />강화조약 체결<br /><span>자료제공 : 미국국립문서기록관리청</span></div>
                             <img alt="참고사진" src="images/content/img_chronicle16.jpg" />
@@ -580,12 +595,12 @@
                   <div class="inner">
                     <div class="reason-txt">
                       <p class="page-title2">역사적</p>
-                      <p>
+                      <p class="page-des">
                         일본은 「태정관 지령」 (1877년) 등을 통해 <br />
                         <strong>'울릉도 외 일도(독도)는 일본과 관계없다'</strong>고 했습니다.<br />
                         반면, 우리나라는 「세종실록」 「지리지」(1454년), 『만기요람」(1808년) 등 여러 역사책에 독도를 우리 땅으로 기록했습니다.
                       </p>
-                      <a href="#">VIEW MORE</a>
+                      <a href="https://www.dokdofoundation.or.kr/our-dokdo/government-position" class="morebtn">VIEW MORE</a>
                     </div>
                     <div class="reason-img">
                       <img src="images/2history/Taejeonggwan.png" alt="태전관 지령" title="태전관 지령" />
@@ -599,12 +614,12 @@
                   <div class="inner">
                     <div class="reason-txt">
                       <p class="page-title2">지리적</p>
-                      <p>
+                      <p class="page-des">
                         독도에서 제일 가까운 섬은 울릉도이고, 맑은 날이면<br />
                         <strong>울릉도에서 독도를 볼 수 있습니다.</strong> <br />
                         그래서 예로부터 사람들은 독도를 울릉도의 부속섬으로 인식하고 우리나라 옛 지도에도 울릉도와 독도는 한 쌍의 섬으로 나란히 표기되어 있습니다.
                       </p>
-                      <a href="#">VIEW MORE</a>
+                      <a href="https://www.dokdofoundation.or.kr/our-dokdo/government-position" class="morebtn">VIEW MORE</a>
                     </div>
                     <div class="reason-img">
                       <img src="images/2history/ulleungdoSee.jpg" alt="울릉도에서 바라본 독도" title="울릉도에서 바라본 독도" />
@@ -619,13 +634,12 @@
                   <div class="inner">
                     <div class="reason-txt">
                       <p class="page-title2">법률적</p>
-                      <p>
-                        <!-- 1900년 대한제국은 칙령 제41호를 통해 독도를 울도 군수의 관할 구역으로 규정했습니다.</strong><br> -->
+                      <p class="page-des">
                         광복 후 연합국은 <strong>독도를 울릉도와 함께 일본의 통치영역에서 제외하였습니다.</strong><br />
                         현재까지 우리 정부는 독도를 대한민국의 영토로 계속 관리, 이용하고 있습니다.<br />
                         명백한 우리 고유의 영토입니다.
                       </p>
-                      <a href="#">VIEW MORE</a>
+                      <a href="https://www.dokdofoundation.or.kr/our-dokdo/government-position" class="morebtn">VIEW MORE</a>
                     </div>
                     <div class="reason-img">
                       <img src="images/2history/scapin677.png" alt="연합국 최고사령관 각서 제677호" title="연합국 최고사령관 각서 제677호" />

@@ -34,15 +34,6 @@
   .swiper-pagination {
     margin-right: 2rem;
   }
-  .reason-txt > .page-title1 {
-    font-size: 4rem;
-  }
-  .reason-txt p {
-    font-size: 1.5rem;
-  }
-  .reason-txt p {
-    margin: 30px 0 50px;
-  }
 }
 @media screen and (max-width: 1200px) {
   /* 독도 행사 */
@@ -74,8 +65,12 @@
   .fa-chevron-down {
     display: none;
   }
-  .language-box {
-    display: none;
+  .languge {
+    margin-top: 0.8rem;
+  }
+  .languge li a {
+    font-size: 1.2rem;
+    padding: 1rem 0.5rem;
   }
   .header-right-m {
     display: flex;
@@ -120,6 +115,23 @@
   }
 }
 @media screen and (max-width: 900px) {
+  /* 이유 */
+  .reason-txt > .page-title2 {
+    font-size: 4rem;
+    font-weight: 400;
+  }
+  .reason-txt > .page-des {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    margin: 4rem 0 3.5rem 0;
+  }
+  .reason-txt a {
+    font-size: 12px;
+  }
+  .reason-txt a::after {
+    /* width: 30px;
+    height: auto; */
+  }
   /* 독도 가는길 */
   .go > .go-bg > .inner {
     padding: 0 20px;
@@ -447,8 +459,8 @@
   }
   /* 우리독도 >> 이유 */
   .reason-box > .inner {
-    padding: 0 4rem;
-    gap: 5rem;
+    padding: 0 4rem 3rem;
+    /* gap: 5rem; */
   }
   .reason-img {
     text-align: left;
@@ -459,11 +471,11 @@
   .reason-txt {
     text-align: left;
   }
-  .reason-txt > .page-title1 {
-    font-size: 3rem;
+  .reason-txt > .page-title2 {
+    margin: 3rem 0 1.5rem;
+    font-size: 4rem;
   }
-  .reason-txt p {
-    margin: 3rem 0 3.5rem 0;
+  .reason-txt > .page-des {
     font-size: 1.5rem;
     line-height: 1.5;
     /* 2줄 말줄임 출력 */
@@ -604,8 +616,18 @@
   }
 }
 @media screen and (max-width: 450px) {
+  /* 헤더 */
+  header {
+    height: 50px;
+  }
+  .logo img {
+    width: 70px;
+  }
+  .bt-menu {
+    width: 30px;
+  }
   /* 우리독도 >> 이유 */
-  .reason-txt p {
+  .reason-txt > .page-des {
     margin: 2rem 0 2.5rem 0;
     line-height: 1.6;
     /* 2줄 말줄임 출력 */
@@ -678,6 +700,11 @@
   }
 }
 @media screen and (max-width: 400px) {
+  /* 이유*/
+  .reason-txt > .page-title2 {
+    font-size: 3.5rem;
+  }
+
   /* 독도 가는길 */
   .go-map-list-dokdo > span {
     content: "";
