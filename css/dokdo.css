@@ -50,6 +50,7 @@ body {
   color: #191919;
   word-break: keep-all;
   font-size: 10px;
+  position: relative;
 }
 /* 공통요소 */
 .wrapAll {
@@ -133,9 +134,6 @@ body {
   100% {
     transform: translateY(0);
   }
-}
-.top-button.active-footer {
-  bottom: 320px;
 }
 /* ***************헤더 */
 /* 상단 */

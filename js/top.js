@@ -47,19 +47,17 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
   // ===============================================
-  const goTopbt = document.querySelector(".top-button");
-  let footer = document.querySelector(".footer");
-  let footerY = footer.offsetTop;
-  let waypoint_footer = new Waypoint({
-    element: document.querySelector(".footer"),
-    handler: function (direction) {
-      if (direction === "down") {
-        goTopbt.classList.add("active-footer");
-      } else {
-        goTopbt.classList.remove("active-footer");
-      }
-    },
-    offset: "95%",
-  });
+  // ==============================================
   // =====================================================
 });
+  $(function () {
+    var $w = $(window),
+      footerHei = $(".footer.inner").outerHeight(),
+      $gotopbt = $(".top-button");
+    $w.on("scroll", function () {
+      var sT = $w.scrollTop();
+      var val = $(document).height() - $w.height() - footerHei;
+      if (sT >= val) $gotopbt.addClass("on");
+      else $gotopbt.removeClass("on");
+    });
+  });
