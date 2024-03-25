@@ -115,6 +115,9 @@ body {
 #go-top-btn-img {
   display: none;
 }
+#go-bottom-btn-img {
+  display: none;
+}
 .top-button #go_up_down_bt img {
   animation: updown 1.5s infinite;
   /* -webkit-animation: updown 1.5s infinite; */
@@ -130,6 +133,9 @@ body {
   100% {
     transform: translateY(0);
   }
+}
+.top-button.active-footer {
+  bottom: 320px;
 }
 /* ***************헤더 */
 /* 상단 */
