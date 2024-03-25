@@ -1637,7 +1637,7 @@ ul.time_navigation {
 }
 .area_timeline .time_txt li > div {
   width: 60%;
-  margin: 100px auto;
+  margin: 50px auto;
   overflow: hidden;
   background: #fff;
   box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.2);
@@ -2807,6 +2807,31 @@ ul.time_navigation {
   line-height: 1.5em;
   box-sizing: border-box;
 }
+/* soon */
+#content > .inr p {
+  max-height: 130px;
+  overflow-y: scroll;
+  padding-right: 10px;
+}
+#content > .inr p::-webkit-scrollbar {
+  width: 10px; /* 스크롤 막대의 너비 */
+}
+#content > .inr p::-webkit-scrollbar-track {
+  background: #f1f1f1; /* 스크롤 막대의 트랙 배경색 */
+}
+#content > .inr p::-webkit-scrollbar-thumb {
+  background: #e5e5e5; /* 스크롤 막대의 슬라이더 배경색 */
+  border-radius: 5px; /* 스크롤 막대 슬라이더의 모서리 반지름 */
+}
+#content > .inr p::-webkit-scrollbar-thumb:hover {
+  background: #aeaeaeed; /* 호버 상태일 때 스크롤 막대의 슬라이더 배경색 */
+}
+.tit02 {
+  min-height: 50px;
+  margin: 20px 0;
+}
+
+/* ______________ */
 #content .org_list li.org01 div {
   border: 1px solid #125a9c;
   background: #125a9c;
@@ -3975,6 +4000,17 @@ div[class^="vow_img0"] .txt li:before {
 }
 
 @media all and (max-width: 910px) {
+  /* soon */
+  .time_navigation a::after {
+    display: none;
+  }
+  .area_timeline .time_txt li > div {
+    margin: 0 auto 40px;
+  }
+  .area_timeline .time_txt .time_img > img {
+    vertical-align: top !important;
+  }
+  /* ______________ */
   .area_sitemap > .gnb > li > a {
     width: 100%;
     margin-bottom: 15px;
@@ -4278,10 +4314,10 @@ div[class^="vow_img0"] .txt li:before {
     right: 25px;
     background: transparent;
   }
-  .tit02 {
+  /* .tit02 {
     font-size: 22px;
     margin: 20px 0 10px 0;
-  }
+  } */
 
   .bg_box01 {
     padding: 2% 0;
@@ -4882,6 +4918,7 @@ div[class^="vow_img0"] .txt li:before {
     left: 43%;
     min-width: 125px;
     padding: 10px 5px;
+    line-height: 1.3rem;
   }
   ul.time_navigation {
     top: 45px;
@@ -5317,6 +5354,10 @@ div[class^="vow_img0"] .txt li:before {
 @media all and (max-width: 450px) {
   [lang="en"] #content .org_list li.org03 li.org0302 li:nth-child(2) p {
     padding: 6px 10px 4px !important;
+  }
+  /* soon */
+  #content > .inr p {
+    max-height: 90px;
   }
 }
 

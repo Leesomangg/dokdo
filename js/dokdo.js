@@ -1,4 +1,20 @@
 window.addEventListener("load", function () {
+  function smoothScroll(targetId) {
+    var targetSection = document.querySelector(targetId);
+    var targetTop = targetSection.offsetTop;
+    var headerHeight = document.querySelector("header").offsetHeight;
+    var adjustedTop = targetTop - headerHeight;
+    window.scrollTo({
+      top: adjustedTop,
+      behavior: "smooth",
+    });
+  }
+  document.querySelectorAll(".gnb a, .gnb-m a").forEach(function (menuLink) {
+    menuLink.addEventListener("click", function (e) {
+      e.preventDefault();
+      smoothScroll(this.getAttribute("href"));
+    });
+  });
   // AOS적용
   AOS.init();
   // 헤더
@@ -20,14 +36,10 @@ window.addEventListener("load", function () {
       logoB.style.display = "none";
     }
   });
-
   //언어 펼침 기능
-
   const languageWord = document.querySelector(".language-word");
   const languageList = document.querySelector(".languge");
-
   let isLanguageActive = false;
-
   languageWord.addEventListener("click", function () {
     if (isLanguageActive) {
       languageList.style.maxHeight = "0"; /* 숨김 */
@@ -54,20 +66,17 @@ window.addEventListener("load", function () {
     setInterval(clock, 1000);
   }
   init();
-
-  //메뉴
-  let nav = this.document.querySelector(".nav-m");
-  let btMenu = this.document.querySelector(".bt-menu");
-  let navClose = this.document.querySelector(".nav-close");
-  btMenu.addEventListener("click", () => {
-    nav.classList.add("nav-m-active");
+  // 다운버튼
+  const downButton = document.querySelector(".demo");
+  downButton.addEventListener("click", function () {
+    scrollToSection("#page-1");
   });
-  navClose.addEventListener("click", function () {
-    nav.classList.remove("nav-m-active");
-  });
-  nav.addEventListener("mouseleave", () => {
-    nav.classList.remove("nav-m-active");
-  });
+  function scrollToSection(sectionId) {
+    const section = document.querySelector(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }
   // 이유
   const swReason = new Swiper(".swReason", {
     direction: "vertical",
@@ -82,7 +91,6 @@ window.addEventListener("load", function () {
       disableOnInteraction: false,
     },
   });
-
 
   // 독도 가는길 예매페이지
   this.document.getElementById("go-ulleung").addEventListener("click", function () {
