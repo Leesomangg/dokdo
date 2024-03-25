@@ -82,6 +82,8 @@ window.addEventListener("load", function () {
       disableOnInteraction: false,
     },
   });
+
+
   // 독도 가는길 예매페이지
   this.document.getElementById("go-ulleung").addEventListener("click", function () {
     // 새로운 페이지 URL
