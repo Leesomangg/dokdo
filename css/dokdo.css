@@ -43,7 +43,9 @@ img {
   vertical-align: middle;
 }
 html {
-  font-size: 10px;
+  font-size: 10px; 
+    scroll-behavior: smooth;
+  
 }
 body {
   font-family: "GmarketSansMedium", sans-serif;
