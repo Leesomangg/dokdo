@@ -1,55 +1,6 @@
-document.addEventListener("DOMContentLoaded", function () {
-  // top 버튼
-  const topBtn = document.getElementById("go_up_down_bt");
-  const goTopImg = document.getElementById("go-top-btn-img");
-  const goBottomImg = document.getElementById("go-bottom-btn-img");
-  topBtn.addEventListener("click", function (event) {
-    event.preventDefault();
-    if (window.scrollY == 0) {
-      window.scrollTo({
-        top: 9999,
-        behavior: "smooth",
-      });
-      goTopImg.style.display = "block";
-      goBottomImg.style.display = "none";
-    } else {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-      goBottomImg.style.display = "block";
-      goTopImg.style.display = "none";
-    }
-  });
-  // =================================================
-  // =====================================================
-  https: function smoothScroll(targetId) {
-    var targetSection = document.querySelector(targetId);
-    var targetTop = targetSection.offsetTop;
-    var headerHeight = document.querySelector("header").offsetHeight;
-    var adjustedTop = targetTop - headerHeight;
-    window.scrollTo({
-      top: adjustedTop,
-      behavior: "smooth",
-    });
-  }
-  document.querySelectorAll(".gnb a, .gnb-m a").forEach(function (menuLink) {
-    menuLink.addEventListener("click", function (e) {
-      e.preventDefault();
-      smoothScroll(this.getAttribute("href"));
-    });
-  });
-});
 window.addEventListener("load", function () {
   // AOS적용
   AOS.init();
-  //언어 펼침 기능
-  const langWord = document.querySelector(".language-word");
-  const Languge = document.querySelector(".languge");
-  const langli = document.querySelector(".language li");
-  langWord.addEventListener("click", function () {
-    Languge.classList.toggle("languge-box-active");
-  });
   // 헤더
   let scy = 0;
   let scActive = 50;
@@ -68,6 +19,22 @@ window.addEventListener("load", function () {
       logoW.style.display = "block";
       logoB.style.display = "none";
     }
+  });
+
+  //언어 펼침 기능
+
+  const languageWord = document.querySelector(".language-word");
+  const languageList = document.querySelector(".languge");
+
+  let isLanguageActive = false;
+
+  languageWord.addEventListener("click", function () {
+    if (isLanguageActive) {
+      languageList.style.maxHeight = "0"; /* 숨김 */
+    } else {
+      languageList.style.maxHeight = "200px"; /* 나타냄 */
+    }
+    isLanguageActive = !isLanguageActive;
   });
   // 시간
   var clockTarget = document.getElementById("clock");
@@ -115,6 +82,8 @@ window.addEventListener("load", function () {
       disableOnInteraction: false,
     },
   });
+
+
   // 독도 가는길 예매페이지
   this.document.getElementById("go-ulleung").addEventListener("click", function () {
     // 새로운 페이지 URL

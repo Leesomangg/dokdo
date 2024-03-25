@@ -145,6 +145,7 @@ header {
 }
 .header-active {
   background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
 }
 .header-active nav .gnb a {
   color: #191919;
@@ -205,16 +206,10 @@ header > .inner {
 }
 .languge {
   position: absolute;
-  /* background-color: #fff; */
-}
-.languge li {
-  opacity: 0;
-  visibility: hidden;
-}
-.languge-box-active li {
-  opacity: 1;
-  visibility: visible;
-  background-color: white;
+  background-color: #fff;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
 }
 .languge li a {
   text-align: center;
