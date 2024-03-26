@@ -98,6 +98,8 @@
       gtag("js", new Date());
       gtag("config", "G-B99GBE5KR1");
     </script>
+    <style>
+    </style>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -243,10 +245,15 @@
                 <div id="clock" class="weather_txt" style="color: gray">00:00</div>
               </li>
               <li>
-                <div class="weather_icon"><i class="xi-brightness" style="font-size: 2.5rem"></i></div>
+                <div class="weather_icon">
+                  <i class="xi-brightness" style="font-size: 2.5rem"></i>
+                </div>
                 <div class="weather_txt">
                   맑음 <br />
                   3&#8451;
+                </div>
+                <div class="weather_txt">
+                  <div class="temperature"></div>
                 </div>
               </li>
               <li>
@@ -706,20 +713,176 @@
               <img src="images/4friends/bg700.jpg" alt="배경" />
             </div>
             <div class="friends-contents-list">
-              <img src="images/4friends/galmegi.png" alt="괭이갈매기" class="fds1" />
-              <img src="images/4friends/hwangro.png" alt="황로" class="fds2" />
-              <img src="images/4friends/gangchi.png" alt="강치" class="fds3" />
-              <img src="images/4friends/heagook.png" alt="해국" class="fds4" />
-              <img src="images/4friends/sacheolnamu.png" alt="사철나무" class="fds5" />
-              <img src="images/4friends/semgirincho.png" alt="섬기린초" class="fds6" />
-              <img src="images/4friends/bucheabbulsanho.png" alt="부채뿔산호" class="fds7" />
-              <img src="images/4friends/dalpeng.png" alt="흰갯민숭달팽이" class="fds8" />
-              <img src="images/4friends/dohwasaewoo.png" alt="도화새우" class="fds9" />
-              <img src="images/4friends/hockdom.png" alt="혹돔" class="fds10" />
+              <div class="btn_open"><img src="images/4friends/galmegi.png" alt="괭이갈매기" class="fds1" /></div>
+              <!-- <a href="#pop_info_1" class="btn_open"><img src="images/4friends/galmegi.png" alt="괭이갈매기" class="fds1" /></a> -->
+              <div class="btn_open"><img src="images/4friends/hwangro.png" alt="황로" class="fds2" /></div>
+              <div class="btn_open"><img src="images/4friends/gangchi.png" alt="강치" class="fds3" /></div>
+              <div class="btn_open"><img src="images/4friends/heagook.png" alt="해국" class="fds4" /></div>
+              <div class="btn_open"><img src="images/4friends/sacheolnamu.png" alt="사철나무" class="fds5" /></div>
+              <div class="btn_open"><img src="images/4friends/semgirincho.png" alt="섬기린초" class="fds6" /></div>
+              <div class="btn_open"><img src="images/4friends/bucheabbulsanho.png" alt="부채뿔산호" class="fds7" /></div>
+              <div class="btn_open"><img src="images/4friends/dalpeng.png" alt="흰갯민숭달팽이" class="fds8" /></div>
+              <div class="btn_open"><img src="images/4friends/dohwasaewoo.png" alt="도화새우" class="fds9" /></div>
+              <div class="btn_open"><img src="images/4friends/hockdom.png" alt="혹돔" class="fds10" /></div>
+
+              <div id="pop_info_1" class="pop_wrap" style="display: none">
+                <div class="pop_inner">
+                  <button type="button" class="btn_close">
+                    <img src="images/4friends/close2.png" alt="닫기" />
+                  </button>
+                  <div class="freinds_txt">
+                    <p class="tit">괭이갈매기</p>
+                    <p class="dsc">백로의 일종으로 몸길이는 약 51cm로 목초지 습지 주변의 숲 등에 서식 한다.</p>
+                  </div>
+                  <div class="freinds_img">
+                    <img src="images/4friends/galmegi-click.png" alt="괭이갈매기" />
+                  </div>
+                </div>
+              </div>
+              <div id="pop_info_2" class="pop_wrap" style="display: none">
+                <div class="pop_inner">
+                  <button type="button" class="btn_close">
+                    <img src="images/4friends/close2.png" alt="닫기" />
+                  </button>
+                  <div class="freinds_txt">
+                    <p class="tit">황로</p>
+                    <p class="dsc">백로의 일종으로 몸길이는 약 51cm로 목초지 습지 주변의 숲 등에 서식 한다.</p>
+                  </div>
+                  <div class="freinds_img">
+                    <img src="images/4friends/hwangro-click.png" alt="황로" />
+                  </div>
+                </div>
+              </div>
+              <div id="pop_info_3" class="pop_wrap" style="display: none">
+                <div class="pop_inner">
+                  <button type="button" class="btn_close">
+                    <img src="images/4friends/close2.png" alt="닫기" />
+                  </button>
+                  <div class="freinds_txt">
+                    <p class="tit">강치</p>
+                    <p class="dsc">백로의 일종으로 몸길이는 약 51cm로 목초지 습지 주변의 숲 등에 서식 한다.</p>
+                  </div>
+                  <div class="freinds_img">
+                    <img src="images/4friends/gangchi-click.png" alt="강치" />
+                  </div>
+                </div>
+              </div>
+              <div id="pop_info_4" class="pop_wrap" style="display: none">
+                <div class="pop_inner">
+                  <button type="button" class="btn_close">
+                    <img src="images/4friends/close2.png" alt="닫기" />
+                  </button>
+                  <div class="freinds_txt">
+                    <p class="tit">해국</p>
+                    <p class="dsc">백로의 일종으로 몸길이는 약 51cm로 목초지 습지 주변의 숲 등에 서식 한다.</p>
+                  </div>
+                  <div class="freinds_img">
+                    <img src="images/4friends/heagook-click.png" alt="해국" />
+                  </div>
+                </div>
+              </div>
+              <div id="pop_info_5" class="pop_wrap" style="display: none">
+                <div class="pop_inner">
+                  <button type="button" class="btn_close">
+                    <img src="images/4friends/close2.png" alt="닫기" />
+                  </button>
+                  <div class="freinds_txt">
+                    <p class="tit">사철나무</p>
+                    <p class="dsc">백로의 일종으로 몸길이는 약 51cm로 목초지 습지 주변의 숲 등에 서식 한다.</p>
+                  </div>
+                  <div class="freinds_img">
+                    <img src="images/4friends/sacheolnamu-click.png" alt="사철나무" />
+                  </div>
+                </div>
+              </div>
+              <div id="pop_info_6" class="pop_wrap" style="display: none">
+                <div class="pop_inner">
+                  <button type="button" class="btn_close">
+                    <img src="images/4friends/close2.png" alt="닫기" />
+                  </button>
+                  <div class="freinds_txt">
+                    <p class="tit">섬기린초</p>
+                    <p class="dsc">백로의 일종으로 몸길이는 약 51cm로 목초지 습지 주변의 숲 등에 서식 한다.</p>
+                  </div>
+                  <div class="freinds_img">
+                    <img src="images/4friends/sacheolnamu-click.png" alt="섬기린초" />
+                  </div>
+                </div>
+              </div>
+              <div id="pop_info_7" class="pop_wrap" style="display: none">
+                <div class="pop_inner">
+                  <button type="button" class="btn_close">
+                    <img src="images/4friends/close2.png" alt="닫기" />
+                  </button>
+                  <div class="freinds_txt">
+                    <p class="tit">부채뿔산호</p>
+                    <p class="dsc">백로의 일종으로 몸길이는 약 51cm로 목초지 습지 주변의 숲 등에 서식 한다.</p>
+                  </div>
+                  <div class="freinds_img">
+                    <img src="images/4friends/bucheabbulsanho-click.png" alt="부채뿔산호" />
+                  </div>
+                </div>
+              </div>
+              <div id="pop_info_8" class="pop_wrap" style="display: none">
+                <div class="pop_inner">
+                  <button type="button" class="btn_close">
+                    <img src="images/4friends/close2.png" alt="닫기" />
+                  </button>
+                  <div class="freinds_txt">
+                    <p class="tit">흰갯민숭달팽이</p>
+                    <p class="dsc">백로의 일종으로 몸길이는 약 51cm로 목초지 습지 주변의 숲 등에 서식 한다.</p>
+                  </div>
+                  <div class="freinds_img">
+                    <img src="images/4friends/dalpeng-click.png" alt="흰갯민숭달팽이" />
+                  </div>
+                </div>
+              </div>
+              <div id="pop_info_9" class="pop_wrap" style="display: none">
+                <div class="pop_inner">
+                  <button type="button" class="btn_close">
+                    <img src="images/4friends/close2.png" alt="닫기" />
+                  </button>
+                  <div class="freinds_txt">
+                    <p class="tit">도화새우</p>
+                    <p class="dsc">백로의 일종으로 몸길이는 약 51cm로 목초지 습지 주변의 숲 등에 서식 한다.</p>
+                  </div>
+                  <div class="freinds_img">
+                    <img src="images/4friends/dohwasaewoo-click.png" alt="도화새우" />
+                  </div>
+                </div>
+              </div>
+              <div id="pop_info_10" class="pop_wrap" style="display: none">
+                <div class="pop_inner">
+                  <button type="button" class="btn_close">
+                    <img src="images/4friends/close2.png" alt="닫기" />
+                  </button>
+                  <div class="freinds_txt">
+                    <p class="tit">혹돔</p>
+                    <p class="dsc">백로의 일종으로 몸길이는 약 51cm로 목초지 습지 주변의 숲 등에 서식 한다.</p>
+                  </div>
+                  <div class="freinds_img">
+                    <img src="images/4friends/hockdom-click.png" alt="혹돔" />
+                  </div>
+                </div>
+              </div>
+
+
             </div>
           </div>
         </div>
       </div>
+<script>
+   $(document).ready(function() {
+    $('.btn_open').click(function() {
+        var popupId = $(this).index() + 1;
+        $('#pop_info_' + popupId).show();
+    });
+
+    $('.btn_close').click(function() {
+        $(this).closest('.pop_wrap').hide();
+    });
+});
+</script>
       <!-- 독도 가는길 -->
       <div class="go" id="page-3">
         <div class="title">
