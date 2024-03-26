@@ -43,9 +43,8 @@ img {
   vertical-align: middle;
 }
 html {
-  font-size: 10px; 
-    scroll-behavior: smooth;
-  
+  font-size: 10px;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "GmarketSansMedium", sans-serif;
@@ -594,7 +593,6 @@ header > .inner {
 .friends-contents {
   position: relative;
   display: block;
-  position: relative;
 }
 .friends-contents .friends-contents-bg img {
   width: 100%;
@@ -664,6 +662,69 @@ header > .inner {
   bottom: 30%;
   left: 30%;
   width: 8%;
+}
+/* 독도친구들 팝업창 */
+
+.pop_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 0;
+  text-align: center;
+}
+.pop_wrap:after {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  content: "";
+}
+.pop_wrap .pop_inner {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  border-radius: 5%;
+
+  width: 500px;
+  height: 500px;
+  vertical-align: middle;
+  font-size: 1.5rem;
+}
+.btn_close {
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  display: block;
+  width: 100%;
+}
+.btn_close > img {
+  display: block;
+  float: right;
+}
+.freinds_txt {
+  margin: 5px 0px 20px;
+}
+.tit {
+  font-size: 3rem;
+  line-height: 2;
+}
+.freinds_img {
+  display: block;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+}
+.freinds_img > img {
+  display: block;
+  width: 100%;
+}
+.dsc {
+  max-width: 250px;
+  margin: 0 auto;
+  line-height: 1.2;
 }
 /* 독도 가는길 */
 .go {

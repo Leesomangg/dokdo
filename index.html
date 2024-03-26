@@ -98,6 +98,8 @@
       gtag("js", new Date());
       gtag("config", "G-B99GBE5KR1");
     </script>
+    <style>
+    </style>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -210,20 +212,20 @@
         </div>
       </nav>
       <script>
-          //메뉴
-  let nav = this.document.querySelector(".nav-m");
-  let btMenu = this.document.querySelector(".bt-menu");
-  let navClose = this.document.querySelector(".nav-close");
-  btMenu.addEventListener("click", () => {
-    nav.classList.add("nav-m-active");
-  });
-  navClose.addEventListener("click", function () {
-    nav.classList.remove("nav-m-active");
-  });
-  nav.addEventListener("mouseleave", () => {
-    nav.classList.remove("nav-m-active");
-  });
-        </script>
+        //메뉴
+        let nav = this.document.querySelector(".nav-m");
+        let btMenu = this.document.querySelector(".bt-menu");
+        let navClose = this.document.querySelector(".nav-close");
+        btMenu.addEventListener("click", () => {
+          nav.classList.add("nav-m-active");
+        });
+        navClose.addEventListener("click", function () {
+          nav.classList.remove("nav-m-active");
+        });
+        nav.addEventListener("mouseleave", () => {
+          nav.classList.remove("nav-m-active");
+        });
+      </script>
       <!-- 비디오 -->
       <div class="visual">
         <div class="visual_area">
@@ -243,10 +245,15 @@
                 <div id="clock" class="weather_txt" style="color: gray">00:00</div>
               </li>
               <li>
-                <div class="weather_icon"><i class="xi-brightness" style="font-size: 2.5rem"></i></div>
+                <div class="weather_icon">
+                  <i class="xi-brightness" style="font-size: 2.5rem"></i>
+                </div>
                 <div class="weather_txt">
                   맑음 <br />
                   3&#8451;
+                </div>
+                <div class="weather_txt">
+                  <div class="temperature"></div>
                 </div>
               </li>
               <li>
@@ -359,7 +366,7 @@
                       <li id="512">
                         <div>
                           <em>512</em>
-                          <h6 class="tit02"><br>우산국 복속</h6>
+                          <h6 class="tit02"><br />우산국 복속</h6>
                           <div class="time_img">
                             <div class="time_summary">삼국사기</div>
                             <img alt="참고사진" src="images/content/img_chronicle01.jpg" />
@@ -371,7 +378,7 @@
                       <li id="1454">
                         <div>
                           <em>1454</em>
-                          <h6 class="tit02"><br>『세종실록』「지리지」</h6>
+                          <h6 class="tit02"><br />『세종실록』「지리지」</h6>
                           <div class="time_img">
                             <div class="time_summary">세종실록 지리지</div>
                             <img alt="참고사진" src="images/content/img_chronicle02.jpg" />
@@ -401,7 +408,7 @@
                       <li id="1693">
                         <div>
                           <em>1693</em>
-                          <h6 class="tit02"><br>안용복(安龍福) 일본 납치</h6>
+                          <h6 class="tit02"><br />안용복(安龍福) 일본 납치</h6>
                           <div class="time_img">
                             <div class="time_summary">숙종실록</div>
                             <img alt="참고사진" src="images/content/img_chronicle04.jpg" />
@@ -413,7 +420,7 @@
                       <li id="1694">
                         <div>
                           <em>1694</em>
-                          <h6 class="tit02"><br>울릉도 수토제도 시행결정</h6>
+                          <h6 class="tit02"><br />울릉도 수토제도 시행결정</h6>
                           <div class="time_img">
                             <div class="time_summary">울릉도 전경<br /><span>자료제공 : 울릉군청</span></div>
                             <img alt="참고사진" src="images/content/img_chronicle05.jpg" />
@@ -428,7 +435,7 @@
                       <li id="1695">
                         <div>
                           <em>1695</em>
-                          <h6 class="tit02"><br>일본 돗토리번 답변</h6>
+                          <h6 class="tit02"><br />일본 돗토리번 답변</h6>
                           <div class="time_img">
                             <div class="time_summary">돗토리번 답변서 <br />(복제본)</div>
                             <img alt="참고사진" src="images/content/img_chronicle06.jpg" />
@@ -455,7 +462,7 @@
                       <li id="169605">
                         <div>
                           <em>1696</em>
-                          <h6 class="tit02"><br>5월. 안용복(安龍福) 일본 도해</h6>
+                          <h6 class="tit02"><br />5월. 안용복(安龍福) 일본 도해</h6>
                           <div class="time_img">
                             <div class="time_summary">원록구병자년<br />조선주착<br />안일권지각서</div>
                             <img alt="참고사진" src="images/content/img_chronicle08.jpg" />
@@ -467,7 +474,7 @@
                       <li id="1770">
                         <div>
                           <em>1770</em>
-                          <h6 class="tit02"><br>『동국문헌비고』「여지고」</h6>
+                          <h6 class="tit02"><br />『동국문헌비고』「여지고」</h6>
                           <div class="time_img">
                             <div class="time_summary">동국문헌비고</div>
                             <img alt="참고사진" src="images/content/img_chronicle09.jpg" />
@@ -493,7 +500,7 @@
                       <li id="1877">
                         <div>
                           <em>1877</em>
-                          <h6 class="tit02"><br>「태정관(太政官)지령」</h6>
+                          <h6 class="tit02"><br />「태정관(太政官)지령」</h6>
                           <div class="time_img">
                             <div class="time_summary">태정관지령</div>
                             <img alt="참고사진" src="images/content/img_chronicle11.jpg" />
@@ -507,7 +514,7 @@
                       <li id="1900">
                         <div>
                           <em>1900</em>
-                          <h6 class="tit02"><br>칙령(勅令) 제41호 반포</h6>
+                          <h6 class="tit02"><br />칙령(勅令) 제41호 반포</h6>
                           <div class="time_img">
                             <div class="time_summary">칙령 제41호</div>
                             <img alt="참고사진" src="images/content/img_chronicle12.jpg" />
@@ -535,7 +542,7 @@
                       <li id="1906">
                         <div>
                           <em>1906</em>
-                          <h6 class="tit02"><br>3월. 울도군수 심흥택 보고서</h6>
+                          <h6 class="tit02"><br />3월. 울도군수 심흥택 보고서</h6>
                           <div class="time_img">
                             <div class="time_summary">보고서 호외 및 지령 제3호</div>
                             <img alt="참고사진" src="images/content/img_chronicle14.jpg" />
@@ -566,7 +573,7 @@
                       <li id="1951">
                         <div>
                           <em>1951</em>
-                          <h6 class="tit02"><br>샌프란시스코 강화조약 체결</h6>
+                          <h6 class="tit02"><br />샌프란시스코 강화조약 체결</h6>
                           <div class="time_img">
                             <div class="time_summary">샌프란시스코<br />강화조약 체결<br /><span>자료제공 : 미국국립문서기록관리청</span></div>
                             <img alt="참고사진" src="images/content/img_chronicle16.jpg" />
@@ -718,20 +725,176 @@
               <img src="images/4friends/bg700.jpg" alt="배경" />
             </div>
             <div class="friends-contents-list">
-              <img src="images/4friends/galmegi.png" alt="괭이갈매기" class="fds1" />
-              <img src="images/4friends/hwangro.png" alt="황로" class="fds2" />
-              <img src="images/4friends/gangchi.png" alt="강치" class="fds3" />
-              <img src="images/4friends/heagook.png" alt="해국" class="fds4" />
-              <img src="images/4friends/sacheolnamu.png" alt="사철나무" class="fds5" />
-              <img src="images/4friends/semgirincho.png" alt="섬기린초" class="fds6" />
-              <img src="images/4friends/bucheabbulsanho.png" alt="부채뿔산호" class="fds7" />
-              <img src="images/4friends/dalpeng.png" alt="흰갯민숭달팽이" class="fds8" />
-              <img src="images/4friends/dohwasaewoo.png" alt="도화새우" class="fds9" />
-              <img src="images/4friends/hockdom.png" alt="혹돔" class="fds10" />
+              <div class="btn_open"><img src="images/4friends/galmegi.png" alt="괭이갈매기" class="fds1" /></div>
+              <!-- <a href="#pop_info_1" class="btn_open"><img src="images/4friends/galmegi.png" alt="괭이갈매기" class="fds1" /></a> -->
+              <div class="btn_open"><img src="images/4friends/hwangro.png" alt="황로" class="fds2" /></div>
+              <div class="btn_open"><img src="images/4friends/gangchi.png" alt="강치" class="fds3" /></div>
+              <div class="btn_open"><img src="images/4friends/heagook.png" alt="해국" class="fds4" /></div>
+              <div class="btn_open"><img src="images/4friends/sacheolnamu.png" alt="사철나무" class="fds5" /></div>
+              <div class="btn_open"><img src="images/4friends/semgirincho.png" alt="섬기린초" class="fds6" /></div>
+              <div class="btn_open"><img src="images/4friends/bucheabbulsanho.png" alt="부채뿔산호" class="fds7" /></div>
+              <div class="btn_open"><img src="images/4friends/dalpeng.png" alt="흰갯민숭달팽이" class="fds8" /></div>
+              <div class="btn_open"><img src="images/4friends/dohwasaewoo.png" alt="도화새우" class="fds9" /></div>
+              <div class="btn_open"><img src="images/4friends/hockdom.png" alt="혹돔" class="fds10" /></div>
+
+              <div id="pop_info_1" class="pop_wrap" style="display: none">
+                <div class="pop_inner">
+                  <button type="button" class="btn_close">
+                    <img src="images/4friends/close2.png" alt="닫기" />
+                  </button>
+                  <div class="freinds_txt">
+                    <p class="tit">괭이갈매기</p>
+                    <p class="dsc">백로의 일종으로 몸길이는 약 51cm로 목초지 습지 주변의 숲 등에 서식 한다.</p>
+                  </div>
+                  <div class="freinds_img">
+                    <img src="images/4friends/galmegi-click.png" alt="괭이갈매기" />
+                  </div>
+                </div>
+              </div>
+              <div id="pop_info_2" class="pop_wrap" style="display: none">
+                <div class="pop_inner">
+                  <button type="button" class="btn_close">
+                    <img src="images/4friends/close2.png" alt="닫기" />
+                  </button>
+                  <div class="freinds_txt">
+                    <p class="tit">황로</p>
+                    <p class="dsc">백로의 일종으로 몸길이는 약 51cm로 목초지 습지 주변의 숲 등에 서식 한다.</p>
+                  </div>
+                  <div class="freinds_img">
+                    <img src="images/4friends/hwangro-click.png" alt="황로" />
+                  </div>
+                </div>
+              </div>
+              <div id="pop_info_3" class="pop_wrap" style="display: none">
+                <div class="pop_inner">
+                  <button type="button" class="btn_close">
+                    <img src="images/4friends/close2.png" alt="닫기" />
+                  </button>
+                  <div class="freinds_txt">
+                    <p class="tit">강치</p>
+                    <p class="dsc">백로의 일종으로 몸길이는 약 51cm로 목초지 습지 주변의 숲 등에 서식 한다.</p>
+                  </div>
+                  <div class="freinds_img">
+                    <img src="images/4friends/gangchi-click.png" alt="강치" />
+                  </div>
+                </div>
+              </div>
+              <div id="pop_info_4" class="pop_wrap" style="display: none">
+                <div class="pop_inner">
+                  <button type="button" class="btn_close">
+                    <img src="images/4friends/close2.png" alt="닫기" />
+                  </button>
+                  <div class="freinds_txt">
+                    <p class="tit">해국</p>
+                    <p class="dsc">백로의 일종으로 몸길이는 약 51cm로 목초지 습지 주변의 숲 등에 서식 한다.</p>
+                  </div>
+                  <div class="freinds_img">
+                    <img src="images/4friends/heagook-click.png" alt="해국" />
+                  </div>
+                </div>
+              </div>
+              <div id="pop_info_5" class="pop_wrap" style="display: none">
+                <div class="pop_inner">
+                  <button type="button" class="btn_close">
+                    <img src="images/4friends/close2.png" alt="닫기" />
+                  </button>
+                  <div class="freinds_txt">
+                    <p class="tit">사철나무</p>
+                    <p class="dsc">백로의 일종으로 몸길이는 약 51cm로 목초지 습지 주변의 숲 등에 서식 한다.</p>
+                  </div>
+                  <div class="freinds_img">
+                    <img src="images/4friends/sacheolnamu-click.png" alt="사철나무" />
+                  </div>
+                </div>
+              </div>
+              <div id="pop_info_6" class="pop_wrap" style="display: none">
+                <div class="pop_inner">
+                  <button type="button" class="btn_close">
+                    <img src="images/4friends/close2.png" alt="닫기" />
+                  </button>
+                  <div class="freinds_txt">
+                    <p class="tit">섬기린초</p>
+                    <p class="dsc">백로의 일종으로 몸길이는 약 51cm로 목초지 습지 주변의 숲 등에 서식 한다.</p>
+                  </div>
+                  <div class="freinds_img">
+                    <img src="images/4friends/sacheolnamu-click.png" alt="섬기린초" />
+                  </div>
+                </div>
+              </div>
+              <div id="pop_info_7" class="pop_wrap" style="display: none">
+                <div class="pop_inner">
+                  <button type="button" class="btn_close">
+                    <img src="images/4friends/close2.png" alt="닫기" />
+                  </button>
+                  <div class="freinds_txt">
+                    <p class="tit">부채뿔산호</p>
+                    <p class="dsc">백로의 일종으로 몸길이는 약 51cm로 목초지 습지 주변의 숲 등에 서식 한다.</p>
+                  </div>
+                  <div class="freinds_img">
+                    <img src="images/4friends/bucheabbulsanho-click.png" alt="부채뿔산호" />
+                  </div>
+                </div>
+              </div>
+              <div id="pop_info_8" class="pop_wrap" style="display: none">
+                <div class="pop_inner">
+                  <button type="button" class="btn_close">
+                    <img src="images/4friends/close2.png" alt="닫기" />
+                  </button>
+                  <div class="freinds_txt">
+                    <p class="tit">흰갯민숭달팽이</p>
+                    <p class="dsc">백로의 일종으로 몸길이는 약 51cm로 목초지 습지 주변의 숲 등에 서식 한다.</p>
+                  </div>
+                  <div class="freinds_img">
+                    <img src="images/4friends/dalpeng-click.png" alt="흰갯민숭달팽이" />
+                  </div>
+                </div>
+              </div>
+              <div id="pop_info_9" class="pop_wrap" style="display: none">
+                <div class="pop_inner">
+                  <button type="button" class="btn_close">
+                    <img src="images/4friends/close2.png" alt="닫기" />
+                  </button>
+                  <div class="freinds_txt">
+                    <p class="tit">도화새우</p>
+                    <p class="dsc">백로의 일종으로 몸길이는 약 51cm로 목초지 습지 주변의 숲 등에 서식 한다.</p>
+                  </div>
+                  <div class="freinds_img">
+                    <img src="images/4friends/dohwasaewoo-click.png" alt="도화새우" />
+                  </div>
+                </div>
+              </div>
+              <div id="pop_info_10" class="pop_wrap" style="display: none">
+                <div class="pop_inner">
+                  <button type="button" class="btn_close">
+                    <img src="images/4friends/close2.png" alt="닫기" />
+                  </button>
+                  <div class="freinds_txt">
+                    <p class="tit">혹돔</p>
+                    <p class="dsc">백로의 일종으로 몸길이는 약 51cm로 목초지 습지 주변의 숲 등에 서식 한다.</p>
+                  </div>
+                  <div class="freinds_img">
+                    <img src="images/4friends/hockdom-click.png" alt="혹돔" />
+                  </div>
+                </div>
+              </div>
+
+
             </div>
           </div>
         </div>
       </div>
+<script>
+   $(document).ready(function() {
+    $('.btn_open').click(function() {
+        var popupId = $(this).index() + 1;
+        $('#pop_info_' + popupId).show();
+    });
+
+    $('.btn_close').click(function() {
+        $(this).closest('.pop_wrap').hide();
+    });
+});
+</script>
       <!-- 독도 가는길 -->
       <div class="go" id="page-3">
         <div class="title">
