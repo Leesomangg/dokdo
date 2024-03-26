@@ -44,60 +44,75 @@ img {
 }
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "GmarketSansMedium", sans-serif;
   color: #191919;
   word-break: keep-all;
   font-size: 10px;
-}
-/* 공통요소 */
-.wrap {
   position: relative;
 }
 .inner {
   position: relative;
-  width: 100%;
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 30px 20px;
+  display: block;
+  padding: 25px;
 }
-/* 헤더 */
-header > .inner {
+h2 {
+  display: block;
+  font-size: 2.5rem;
+  font-family: GmarketSansBold;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.eximg {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding-bottom: 50px;
 }
-.hd-logo > .logo > img {
-  width: 200px;
-  height: auto;
-}
-.reserved {
-  display: flex;
-  gap: 50px;
-}
-.reserved > a p {
-  font-size: 2rem;
-}
-.go-contents > .inner {
-  /* width: 50%; */
-  max-width: 700px;
-  background-color: antiquewhite;
-}
-.go-contents > .inner > form{
-  margin: 0 auto;
+.contents{
   text-align: center;
 }
-.place_select_list {
+.contents > span {
+  font-size: 1.5rem;
+  line-height: 30px;
+}
+.contents2 {
+  display: block;
+  margin-bottom: 30px;
+}
+.contents3 {
+  display: block;
+  margin-bottom: 15px;
+}
+.contents4 {
+  display: block;
+  margin-top: 15px;
+}
+.contents > p {
+  font-size: 2rem;
+  line-height: 35px;
+  color: #1c60a0;
+}
+.ex {
   display: flex;
-  justify-content: center;
   justify-content: space-between;
+  gap: 0 10px;
+  padding: 50px 0;
 }
-.place_select_list .title{
-  font-size: 1.8rem;
+.ex > li > img {
+  width: 100%;
 }
-.how{
+.bottom {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0 20px;
+}
+.bottom > span {
   font-size: 2.0rem;
+}
+.bottom > a > img {
+  width: 40px;
+  height: 40px;
 }

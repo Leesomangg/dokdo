@@ -91,14 +91,13 @@ window.addEventListener("load", function () {
       disableOnInteraction: false,
     },
   });
-
   // 독도 가는길 예매페이지
-  this.document.getElementById("go-ulleung").addEventListener("click", function () {
-    // 새로운 페이지 URL
-    var goUlleung = "ship_reservation.html";
-    // 새로운 페이지로 이동
-    window.location.href = goUlleung;
-  });
+  // this.document.getElementById("go-ulleung").addEventListener("click", function () {
+  //   // 새로운 페이지 URL
+  //   var goUlleung = "https://www.daezer.com/main/main.html";
+  //   // 새로운 페이지로 이동
+  //   window.location.href = goUlleung;
+  // });
   //__________________________________________________________________________________________
   // 독도 행사 swiper
   var swiper = new Swiper(".sw-event", {
@@ -170,4 +169,34 @@ window.addEventListener("load", function () {
       familyDiv.style.borderRadius = ""; // 클릭되지 않은 경우 테두리 모양 원래대로
     }
   });
+  // ==================== promotion 이벤트
+  // function openSnsPopup() {
+  //   // 팝업 창을 열고 크기 조절을 비활성화
+  //   var snsPopup = window.open("event1.html", "", "width=1000,height=3136, resizable=no");
+  //   // 팝업 창을 포커스
+  //   snsPopup.focus();
+  // }
+  // function openStempPopup() {
+  //   // 팝업 창을 열고 크기 조절을 비활성화
+  //   var stempPopup = window.open("event2.html", "", "width=1000,height=3136, resizable=no");
+  //   // 팝업 창을 포커스
+  //   stempPopup.focus();
+  // }
+  // ==============================================
+  function openSnsPopup() {
+    var popupURL = "event1.html";
+    var popupWidth = 1000;
+    var popupHeight = 1300;
+    var leftPosition = (window.screen.width - popupWidth) / 2;
+    var topPosition = (window.screen.height - popupHeight) / 2;
+    window.open(popupURL, "popup", "width=" + popupWidth + ",height=" + popupHeight + ",left=" + leftPosition + ",top=" + topPosition);
+  }
+  function openStempPopup() {
+    var popupURL = "event2.html";
+    var popupWidth = 1000;
+    var popupHeight = 1300;
+    var leftPosition = (window.screen.width - popupWidth) / 2;
+    var topPosition = (window.screen.height - popupHeight) / 2;
+    window.open(popupURL, "popup", "width=" + popupWidth + ",height=" + popupHeight + ",left=" + leftPosition + ",top=" + topPosition);
+  }
 });
