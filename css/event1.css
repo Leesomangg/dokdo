@@ -67,11 +67,10 @@ h2 {
 }
 .eximg {
   display: flex;
-  justify-content: center;
-  gap: 0 10px;
+  justify-content: space-between;
   padding-bottom: 50px;
 }
-.contents {
+.contents{
   text-align: center;
 }
 .contents > span {
@@ -97,26 +96,12 @@ h2 {
 }
 .ex {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px 10px;
+  justify-content: space-between;
+  gap: 0 10px;
   padding: 50px 0;
 }
-.ex1 {
-  display: flex;
-  gap: 0 10px;
-}
-.ex2 {
-  display: flex;
-  gap: 0 10px;
-}
-.ex > .ex1 > li > img {
+.ex > li > img {
   width: 100%;
-  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.1);
-}
-.ex > .ex2 > li > img {
-  width: 100%;
-  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.1);
 }
 .bottom {
   display: flex;
@@ -125,7 +110,7 @@ h2 {
   gap: 0 20px;
 }
 .bottom > span {
-  font-size: 2rem;
+  font-size: 2.0rem;
 }
 .bottom > a > img {
   width: 40px;

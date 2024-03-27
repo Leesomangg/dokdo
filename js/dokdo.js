@@ -176,17 +176,33 @@ window.addEventListener("load", function () {
     }
   });
   // ==================== promotion 이벤트
-  // 인스타 챌린지 링크에 클릭 이벤트 리스너 추가
-  document.getElementById("openSnsPopup").addEventListener("click", function () {
-    openSnsPopup(); // openSnsPopup 함수 호출
-  });
+  // function openSnsPopup() {
+  //   // 팝업 창을 열고 크기 조절을 비활성화
+  //   var snsPopup = window.open("event1.html", "", "width=1000,height=3136, resizable=no");
+  //   // 팝업 창을 포커스
+  //   snsPopup.focus();
+  // }
+  // function openStempPopup() {
+  //   // 팝업 창을 열고 크기 조절을 비활성화
+  //   var stempPopup = window.open("event2.html", "", "width=1000,height=3136, resizable=no");
+  //   // 팝업 창을 포커스
+  //   stempPopup.focus();
+  // }
+  // ==============================================
   function openSnsPopup() {
-    var snsPopup = window.open("event1.html", "", "width=1000,height=1300px,resizable=no");
+    var popupURL = "event1.html";
+    var popupWidth = 1000;
+    var popupHeight = 1300;
+    var leftPosition = (window.screen.width - popupWidth) / 2;
+    var topPosition = (window.screen.height - popupHeight) / 2;
+    window.open(popupURL, "popup", "width=" + popupWidth + ",height=" + popupHeight + ",left=" + leftPosition + ",top=" + topPosition);
   }
-  document.getElementById("openStempPopup").addEventListener("click", function () {
-    openStempPopup(); // openSnsPopup 함수 호출
-  });
   function openStempPopup() {
-    var snsPopup = window.open("event2.html", "", "width=1000,height=1300px,resizable=no");
+    var popupURL = "event2.html";
+    var popupWidth = 1000;
+    var popupHeight = 1300;
+    var leftPosition = (window.screen.width - popupWidth) / 2;
+    var topPosition = (window.screen.height - popupHeight) / 2;
+    window.open(popupURL, "popup", "width=" + popupWidth + ",height=" + popupHeight + ",left=" + leftPosition + ",top=" + topPosition);
   }
 });
