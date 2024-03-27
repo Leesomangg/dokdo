@@ -524,7 +524,7 @@
   }
   .friends-contents-list .fds2 {
     top: 31%;
-    right: 11%;
+    right: 5%;
     width: 6%;
   }
   .friends-contents-list .fds3 {
@@ -548,7 +548,7 @@
   }
   .friends-contents-list .fds7 {
     bottom: 10%;
-    right: 35%;
+    right: 50%;
     width: 9%;
   }
   .friends-contents-list .fds8 {
@@ -557,13 +557,13 @@
     width: 10%;
   }
   .friends-contents-list .fds9 {
-    bottom: 30%;
-    right: 25%;
+    bottom: 25%;
+    right: 40%;
     width: 18%;
   }
   .friends-contents-list .fds10 {
-    bottom: 20%;
-    left: 35%;
+    bottom: 30%;
+    left: 15%;
     width: 15%;
   }
 
@@ -605,7 +605,7 @@
     display: block;
   }
   .friends-contents-list .fds2 {
-    top: 42%;
+    top: 33%;
   }
   /* 독도가는길 예매 */
   .go-map-top {
