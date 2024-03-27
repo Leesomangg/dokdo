@@ -88,6 +88,7 @@
     font-size: 2.4rem;
   }
 }
+
 @media screen and (max-width: 960px) {
   /* 비쥬얼 */
   .visual {
@@ -103,6 +104,9 @@
     height: auto;
   }
   /* 우리독도 >> 이유 */
+  .reason-box > .inner {
+    padding: 0 8%;
+  }
   .reason-img img {
     width: 60%;
   }
@@ -113,7 +117,68 @@
     flex-direction: column-reverse;
     gap: 0rem;
   }
+  /* 독도친구들 */
+  .friendbg-w {
+    display: none;
+  }
+.friendbg-m {
+    display: block;
+  }
+  .friends-contents-list .fds1 {
+    top: 8%;
+    left: 10%;
+    width: 10%;
+  }
+  .friends-contents-list .fds2 {
+    top: 31%;
+    right: 11%;
+    width: 4%;
+  }
+  .friends-contents-list .fds3 {
+    top: 38%;
+    left: 28%;
+    width: 8%;
+  }
+  .friends-contents-list .fds4 {
+    top: 25%;
+    right: 35%;
+    width: 7%;
+  }
+  .friends-contents-list .fds5 {
+    top: 10%;
+    right: 45%;
+    width: 7%;
+  }
+  .friends-contents-list .fds6 {
+    top: 15%;
+    left: 35%;
+    width: 7%;
+  }
+  .friends-contents-list .fds7 {
+    bottom: 10%;
+    right: 35%;
+    width: 7%;
+  }
+  .friends-contents-list .fds8 {
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+    width: 8%;
+  }
+  .friends-contents-list .fds9 {
+    position: absolute;
+    bottom: 40%;
+    right: 20%;
+    width: 10%;
+  }
+  .friends-contents-list .fds10 {
+    position: absolute;
+    bottom: 20%;
+    left: 35%;
+    width: 8%;
+  }
 }
+
 @media screen and (max-width: 900px) {
   /* 이유 */
   .reason-txt > .page-title2 {
@@ -456,11 +521,6 @@
   .nav-m > .header-right-m {
     display: flex;
     gap: 10px;
-  }
-  /* 우리독도 >> 이유 */
-  .reason-box > .inner {
-    padding: 0 4rem 3rem;
-    /* gap: 5rem; */
   }
   .reason-img {
     text-align: left;

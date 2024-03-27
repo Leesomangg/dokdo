@@ -12,6 +12,12 @@ window.addEventListener("load", function () {
   document.querySelectorAll(".gnb a, .gnb-m a").forEach(function (menuLink) {
     menuLink.addEventListener("click", function (e) {
       e.preventDefault();
+      // 모든 링크에서 active 클래스 제거
+      document.querySelectorAll(".gnb a.active, .gnb-m a.active").forEach(function (link) {
+        link.classList.remove("active");
+      });
+      // 클릭된 링크에 active 클래스 추가
+      this.classList.add("active");
       smoothScroll(this.getAttribute("href"));
     });
   });

@@ -187,6 +187,10 @@ header > .inner {
 .gnb a {
   color: #fff;
 }
+.gnb a.active,
+.gnb-m a.active {
+  font-weight: bold;
+}
 /* 아이콘 >> 인스타+유튜브+언어 */
 .header-right {
   display: flex;
@@ -594,14 +598,15 @@ header > .inner {
   position: relative;
   display: block;
 }
-.friends-contents .friends-contents-bg img {
+.friends-contents .friends-contents-bg > img {
   width: 100%;
   height: auto;
-  /* width: auto; */
-  /* height: 100%; */
 }
 .friends-contents-list img {
   cursor: pointer;
+}
+.friendbg-m {
+  display: none;
 }
 .friends-contents-list .fds1 {
   position: absolute;
@@ -611,7 +616,7 @@ header > .inner {
 }
 .friends-contents-list .fds2 {
   position: absolute;
-  top: 21%;
+  top: 31%;
   right: 11%;
   width: 4%;
 }
@@ -659,12 +664,11 @@ header > .inner {
 }
 .friends-contents-list .fds10 {
   position: absolute;
-  bottom: 30%;
-  left: 30%;
+  bottom: 20%;
+  left: 35%;
   width: 8%;
 }
 /* 독도친구들 팝업창 */
-
 .pop_wrap {
   position: absolute;
   top: 0;
@@ -688,8 +692,8 @@ header > .inner {
   padding: 30px;
   border-radius: 5%;
 
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   vertical-align: middle;
   font-size: 1.5rem;
 }
@@ -713,8 +717,8 @@ header > .inner {
 }
 .freinds_img {
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   margin: 0 auto;
 }
 .freinds_img > img {
