@@ -5,46 +5,46 @@
 }
 @media screen and (max-width: 390px) {
   .bottom > span {
-    font-size: 1.8rem !important;
+    font-size: 1.8rem;
   }
   .bottom > a > img {
-    width: 35px !important;
-    height: 35px !important;
+    width: 35px;
+    height: 35px;
   }
 }
 @media screen and (max-width: 375px) {
   .contents > span {
-    font-size: 1.4rem !important;
+    font-size: 1.4rem;
   }
   .contents2 {
-    margin-bottom: 20px !important;
+    margin-bottom: 20px;
   }
   .contents > p {
-    font-size: 1.8rem !important;
+    font-size: 1.8rem;
   }
 }
 @media screen and (max-width: 360px) {
   .contents > span {
-    font-size: 1.3rem !important;
+    font-size: 1.3rem;
   }
   .inner {
     padding: 15px;
   }
   .bottom > span {
-    font-size: 1.5rem !important;
+    font-size: 1.5rem;
   }
   .bottom > a > img {
-    width: 30px !important;
-    height: 30px !important;
+    width: 30px;
+    height: 30px;
   }
 }
 @media screen and (max-width: 350px) {
   .contents > span {
-    font-size: 1.2rem !important;
+    font-size: 1.2rem;
   }
 }
 @media screen and (max-width: 330px) {
   .contents > p {
-    font-size: 1.7rem !important;
+    font-size: 1.7rem;
   }
 }
