@@ -58,76 +58,69 @@ body {
   display: block;
   padding: 25px;
 }
-h2 {
-  display: block;
-  font-size: 2.5rem;
-  font-family: GmarketSansBold;
+#wrap {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+h1 {
   text-align: center;
-  padding-bottom: 50px;
+  margin-bottom: 20px;
 }
-.eximg {
-  display: flex;
-  justify-content: center;
-  gap: 0 10px;
-  padding-bottom: 50px;
+form fieldset {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
 }
-.contents {
-  text-align: center;
+legend {
+  font-weight: bold;
 }
-.contents > span {
-  font-size: 1.5rem;
-  line-height: 30px;
-}
-.contents2 {
-  display: block;
-  margin-bottom: 30px;
-}
-.contents3 {
-  display: block;
+.form-group {
   margin-bottom: 15px;
 }
-.contents4 {
+label.reg {
   display: block;
-  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
-.contents > p {
-  font-size: 2rem;
-  line-height: 35px;
-  color: #1c60a0;
-}
-.ex {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px 10px;
-  padding: 50px 0;
-}
-.ex1 {
-  display: flex;
-  gap: 0 10px;
-}
-.ex2 {
-  display: flex;
-  gap: 0 10px;
-}
-.ex > .ex1 > li > img {
+input[type="text"],
+select {
   width: 100%;
-  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
 }
-.ex > .ex2 > li > img {
-  width: 100%;
-  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.1);
+.form-group p {
+  margin: 0;
+  margin-bottom: 5px;
 }
-.bottom {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0 20px;
+label input[type="radio"],
+label input[type="checkbox"] {
+  margin-right: 5px;
 }
-.bottom > span {
-  font-size: 2rem;
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
 }
-.bottom > a > img {
-  width: 40px;
-  height: 40px;
+#confirmation {
+  display: none;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+#confirmation h2 {
+  margin-top: 0;
+}
+#confirmation ul {
+  list-style: none;
+  padding-left: 20px;
 }
