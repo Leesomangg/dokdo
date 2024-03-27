@@ -67,10 +67,12 @@ header > img {
 .top {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 0 30px;
 }
 .top img {
   width: 50%;
+  height: 100%;
 }
 .top_txt {
   display: flex;
