@@ -3751,7 +3751,7 @@ div[class^="vow_img0"] .txt li:before {
   }
   #container .inr {
     box-sizing: border-box;
-    padding: 15px 0 30px 0;
+    /* padding: 15px 0 30px 0; */
   }
 
   #content > inr .describe {
@@ -4043,9 +4043,7 @@ div[class^="vow_img0"] .txt li:before {
   .photoList > li:nth-child(2n) {
     margin-right: 0;
   }
-  #content {
-    padding: 0;
-  }
+
   #content > .inr {
     width: inherit;
   }

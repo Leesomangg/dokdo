@@ -516,8 +516,8 @@ header > .inner {
 }
 /* 독도 행사 */
 .event {
-  overflow: hidden;
-  margin-top: 200px;
+  /* overflow: hidden; */
+  padding-top: 150px;
 }
 .event-inner {
   width: 100%;
