@@ -176,6 +176,16 @@ window.addEventListener("load", function () {
     }
   });
   // ==================== promotion 이벤트
+  // 인스타 챌린지 팝업 열기
+  document.getElementById("openSnsPopup").addEventListener("click", function () {
+    // 팝업 창을 열고 이미지를 표시
+    window.open("event1.html", "", "width=1000,height=1300");
+  });
+  // 스탬프 투어 팝업 열기
+  document.getElementById("openStempPopup").addEventListener("click", function () {
+    // 팝업 창을 열고 이미지를 표시
+    window.open("event2.html", "", "width=1000,height=1300");
+  });
   // function openSnsPopup() {
   //   // 팝업 창을 열고 크기 조절을 비활성화
   //   var snsPopup = window.open("event1.html", "", "width=1000,height=3136, resizable=no");

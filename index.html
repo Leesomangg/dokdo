@@ -860,7 +860,6 @@
             var popupId = $(this).index() + 1;
             $("#pop_info_" + popupId).show();
           });
-
           $(".btn_close").click(function () {
             $(this).closest(".pop_wrap").hide();
           });
@@ -986,8 +985,8 @@
             <img src="images/dokdo_icon.png" alt="독도 아이콘" />
           </div>
           <div class="promo-contents">
-            <a href="javascript:void(0);" onclick="openSnsPopup()"><img src="images/7promotion/pro1.jpg" alt="인스타 챌린지" /></a>
-            <a href="javascript:void(0);" onclick="openStempPopup()"><img src="images/7promotion/pro2.jpg" alt="스탬프 투어" /></a>
+            <a href="javascript:void(0);" id="openSnsPopup"><img src="images/7promotion/pro1.jpg" alt="인스타 챌린지" /></a>
+            <a href="javascript:void(0);" id="openStempPopup"><img src="images/7promotion/pro2.jpg" alt="스탬프 투어" /></a>
           </div>
         </div>
       </div>
