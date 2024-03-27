@@ -200,7 +200,7 @@ header > .inner {
 }
 .icons {
   font-size: 2rem;
-  padding: 0.8rem;
+  padding: 1rem 1.5rem;
   color: #fff;
 }
 .fa-chevron-down {
@@ -608,6 +608,9 @@ header > .inner {
 .friendbg-m {
   display: none;
 }
+.friendbg-m2 {
+  display: none;
+}
 .friends-contents-list .fds1 {
   position: absolute;
   top: 8%;
@@ -658,7 +661,7 @@ header > .inner {
 }
 .friends-contents-list .fds9 {
   position: absolute;
-  bottom: 40%;
+  bottom: 20%;
   right: 20%;
   width: 10%;
 }
