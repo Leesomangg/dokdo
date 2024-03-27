@@ -1,0 +1,172 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap");
+/* 독도체 font-family: "East Sea Dokdo", sans-serif; */
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GmarketSansLight";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GmarketSansBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "JeonjuSunR";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202@1.0/JeonjuSunR.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  color: #191919;
+  text-decoration: none;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "GmarketSansMedium", sans-serif;
+  color: #191919;
+  word-break: keep-all;
+  font-size: 10px;
+}
+/* 공통요소 */
+#wrap {
+  position: relative;
+  display: block;
+}
+.inner {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+/* 헤더 */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hd-logo > .logo > img {
+  width: 200px;
+  height: auto;
+}
+.reserved {
+  display: flex;
+  gap: 50px;
+}
+.reserved > a p {
+  font-size: 2rem;
+}
+.go-contents {
+  /* width: 50%; */
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: antiquewhite;
+}
+.go-contents > form {
+  margin: 0 auto;
+  text-align: center;
+}
+.place_select_list {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+.place_select_list .title {
+  font-size: 1.8rem;
+}
+.how {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.how1 > label {
+  display: flex;
+  justify-content: space-between;
+}
+.how1 .start {
+  display: flex;
+}
+.how1 > label > .start > span {
+  font-size: 2rem;
+}
+.how1 > label > .center::after {
+  content: "-----";
+}
+.how1 > label > .end > span {
+  font-size: 2rem;
+}
+
+.how1 .start,
+.how1 .center,
+.how1 .end {
+  width: 33.33%; /* 또는 원하는 너비 */
+  box-sizing: border-box; /* 요소의 너비에 패딩과 테두리를 포함하도록 설정 */
+  float: left; /* 요소를 왼쪽으로 정렬합니다. */
+}
+
+
+.how2 > label {
+  display: flex;
+  justify-content: space-between;
+}
+.how2 .start {
+  display: flex;
+}
+.how2 > label > .start > span {
+  font-size: 2rem;
+}
+.how2 > label > .center::after {
+  content: "-----";
+  position: absolute;
+}
+.how2 > label > .end > span {
+  font-size: 2rem;
+}
+
+
+
+.how2 .start,
+.how2 .center,
+.how2 .end {
+  width: 33.33%; /* 또는 원하는 너비 */
+  box-sizing: border-box; /* 요소의 너비에 패딩과 테두리를 포함하도록 설정 */
+  float: left; /* 요소를 왼쪽으로 정렬합니다. */
+}
+
+.start,
+.center,
+.end {
+  display: inline-block;
+  vertical-align: top; /* 필요에 따라 상단에 정렬합니다. */
+}
+
+
+
+
+
