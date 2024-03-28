@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // top 버튼
   const topBtn = document.getElementById("go_up_down_bt");
   const goTopImg = document.getElementById("go-top-btn-img");
+  const goDownImg = document.getElementById("go-bottom-btn-img");
   topBtn.addEventListener("click", function (event) {
     event.preventDefault();
     window.scrollTo({
@@ -25,6 +26,11 @@ document.addEventListener("DOMContentLoaded", function () {
       goTopImg.style.display = "none";
     }
   });
+  goTopImg.addEventListener("click", function () {
+    if(scrollY !== 0 && windowHeight !== 0){
+    }
+    goTopImg.src = goDownImg.src;
+  });
   // footer와 관련된 jQuery 코드
   var $w = $(window),
     footerHei = $(".footer.inner").outerHeight(),
@@ -34,31 +40,31 @@ document.addEventListener("DOMContentLoaded", function () {
     var val = $(document).height() - $w.height() - footerHei;
     if (sT >= val) $gotopbt.addClass("on");
     else $gotopbt.removeClass("on");
-  })
+  });
 });
 // document.addEventListener("DOMContentLoaded", function () {
-//   // top 버튼
-//   // const topBtn = document.getElementById("go_up_down_bt");
-//   // const goTopImg = document.getElementById("go-top-btn-img");
-//   // const goBottomImg = document.getElementById("go-bottom-btn-img");
-//   // topBtn.addEventListener("click", function (event) {
-//   //   event.preventDefault();
-//   //   if (window.scrollY == 0) {
-//   //     window.scrollTo({
-//   //       top: 9999,
-//   //       behavior: "smooth",
-//   //     });
-//   //     goTopImg.style.display = "block";
-//   //     goBottomImg.style.display = "none";
-//   //   } else {
-//   //     window.scrollTo({
-//   //       top: 0,
-//   //       behavior: "smooth",
-//   //     });
-//   //     goBottomImg.style.display = "block";
-//   //     goTopImg.style.display = "none";
-//   //   }
-//   // });
+//   top 버튼
+//   const topBtn = document.getElementById("go_up_down_bt");
+//   const goTopImg = document.getElementById("go-top-btn-img");
+//   const goBottomImg = document.getElementById("go-bottom-btn-img");
+//   topBtn.addEventListener("click", function (event) {
+//     event.preventDefault();
+//     if (window.scrollY == 0) {
+//       window.scrollTo({
+//         top: 9999,
+//         behavior: "smooth",
+//       });
+//       goTopImg.style.display = "block";
+//       goBottomImg.style.display = "none";
+//     } else {
+//       window.scrollTo({
+//         top: 0,
+//         behavior: "smooth",
+//       });
+//       goBottomImg.style.display = "block";
+//       goTopImg.style.display = "none";
+//     }
+//   });
 //   const topBtn = document.getElementById("go_up_down_bt");
 //   const goTopImg = document.getElementById("go-top-btn-img");
 //   topBtn.addEventListener("click", function (event) {
