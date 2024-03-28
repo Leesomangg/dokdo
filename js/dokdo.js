@@ -69,7 +69,7 @@ window.addEventListener("load", function () {
   function closeLanguageList() {
     languageList.style.maxHeight = "0";
   }
-  
+
   // 시간
   var clockTarget = document.getElementById("clock");
   function clock() {
@@ -90,13 +90,17 @@ window.addEventListener("load", function () {
   init();
   // 다운버튼
   const downButton = document.querySelector(".demo");
-  downButton.addEventListener("click", function () {
+  downButton.addEventListener("click", function (event) {
+    event.preventDefault(); // 기본 이벤트 동작 방지
     scrollToSection("#page-1");
   });
+
   function scrollToSection(sectionId) {
     const section = document.querySelector(sectionId);
     if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+      const yOffset = -50;
+      const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
     }
   }
   // 이유
@@ -108,10 +112,10 @@ window.addEventListener("load", function () {
     },
     loop: true,
     speed: 500,
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
   });
   // 독도 가는길 예매페이지
   // this.document.getElementById("go-ulleung").addEventListener("click", function () {
