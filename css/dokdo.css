@@ -67,9 +67,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 200px;
+  margin-top: 170px;
+  padding-top: 30px;
   margin-bottom: 50px;
 }
+
 .page-title2 {
   font-size: 3.2rem;
 }
@@ -203,6 +205,9 @@ header > .inner {
   padding: 1rem 1.5rem;
   color: #fff;
 }
+.fa-brands {
+  font-size: 2.3rem;
+}
 .fa-chevron-down {
   font-size: 1rem;
   padding: 0;
@@ -251,7 +256,7 @@ header > .inner {
   position: fixed;
   top: 0;
   left: 100%;
-  width: 450px;
+  width: 350px;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.84);
   z-index: 9999;
@@ -260,7 +265,7 @@ header > .inner {
   transition: left 0.5s ease-in-out;
 }
 .nav-m-active {
-  left: calc(100% - 450px);
+  left: calc(100% - 350px);
 }
 .nav-close {
   position: absolute;
@@ -516,7 +521,7 @@ header > .inner {
 }
 /* 독도 행사 */
 .event {
-  /* overflow: hidden; */
+  overflow: hidden;
   padding-top: 150px;
 }
 .event-inner {
