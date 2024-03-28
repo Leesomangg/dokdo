@@ -680,7 +680,7 @@
     display: flex;
     flex-wrap: wrap;
   }
-  .page-title2,
+  .reason-txt > .page-title2,
   .morebtn {
     order: 1;
   }
