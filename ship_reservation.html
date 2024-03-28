@@ -23,10 +23,12 @@
     <meta name="theme-color" content="#ffffff" />
     <!-- <link rel="stylesheet" href="css/dokdo.css" /> -->
     <link rel="stylesheet" href="css/ship_reservation.css" />
+    <link rel="stylesheet" href="css/ship_reservation_responsive.css" />
     <title>예약 페이지</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.0/main.min.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.0/main.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <script src="js/ship_reservation.js"></script>
   </head>
   <body>
@@ -41,7 +43,7 @@
           </div>
           <div class="reserved">
             <a href="#"><p>승선권 예매</p></a>
-            <a href="#"><p>결제조회 및 취소</p></a>
+            <a href="ship_reservation_check.html"><p>결제조회 및 취소</p></a>
           </div>
         </header>
         <div class="go-contents">
@@ -70,7 +72,7 @@
               <div class="how2">
                 <label>
                   <div class="start">
-                    <input type="checkbox" name="reservation_go" value="ulleung" />
+                    <input style="zoom: 1.5" type="checkbox" name="reservation_go" value="ulleung" />
                     <span>울릉_도동</span>
                   </div>
                   <div class="center"></div>
@@ -81,16 +83,51 @@
               </div>
               <div class="how3">
                 <label>
-                  <input type="checkbox" name="reservation_go" value="dokdo" />
-                  <span>울릉도</span>
-                  <span>독도</span>
+                  <div class="start">
+                    <input style="zoom: 1.5" type="checkbox" name="reservation_go" value="dokdo" />
+                    <span>울릉도</span>
+                  </div>
+                  <div class="center"></div>
+                  <div class="end">
+                    <span>독도</span>
+                  </div>
                 </label>
               </div>
             </div>
             <div class="howlong">
               <p>여행기간</p>
-              <form></form>
+              <div class="calendar">
+                <!-- <input type="text" id="datepicker" name="datetimes" placeholder="여행기간을 선택해주세요" readonly /> -->
+                <input type="text" placeholder="여행기간을 선택해주세요" name="daterange" />
+              </div>
+              <script>
+                $(function () {
+                  $('input[name="daterange"]').daterangepicker(
+                    {
+                      opens: "left",
+                      showDropdowns: true,
+                      autoApply: true,
+                      locale: {
+                        format: "YYYY-MM-DD",
+                        separator: " ~ ",
+                        applyLabel: "적용",
+                        cancelLabel: "취소",
+                        fromLabel: "시작일",
+                        toLabel: "종료일",
+                        customRangeLabel: "직접 선택",
+                        daysOfWeek: ["일", "월", "화", "수", "목", "금", "토"],
+                        monthNames: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+                        firstDay: 0,
+                      },
+                    },
+                    function (start, end, label) {
+                      console.log("A new date selection was made: " + start.format("YYYY-MM-DD") + " to " + end.format("YYYY-MM-DD"));
+                    }
+                  );
+                });
+              </script>
             </div>
+            <button>다음으로</button>
           </form>
         </div>
       </div>

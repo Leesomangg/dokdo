@@ -3,25 +3,29 @@
 /* 독도체 font-family: "East Sea Dokdo", sans-serif; */
 @font-face {
   font-family: "GmarketSansMedium";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "GmarketSansLight";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff") format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "GmarketSansBold";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff") format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "JeonjuSunR";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202@1.0/JeonjuSunR.woff") format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202@1.0/JeonjuSunR.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -91,7 +95,7 @@ header > img {
 }
 .stemp_txt2 li {
   font-size: 1.6rem;
-  padding: 5px;
+  padding: 5px 0;
 }
 .contents_txt {
   position: relative;
@@ -133,11 +137,21 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 20px;
 }
 .bottom > span {
   font-size: 2rem;
+  text-align: center;
+  line-height: 20px;
 }
 .bottom_bt {
   display: flex;
   gap: 0 15px;
+}
+.bottom_bt a {
+  display: inline-block;
+  width: 100%;
+}
+.bottom_bt img {
+  width: 100%;
 }

@@ -81,128 +81,122 @@ header {
 .reserved > a p {
   font-size: 1.6rem;
 }
-.go-contents {
-  /* width: 50%; */
-  max-width: 700px;
-  margin: 0 auto;
-  /* background-color: antiquewhite; */
-}
-.go-contents > form {
-  margin: 0 auto;
-  text-align: center;
-}
-.place_select_list {
-  display: flex;
-  justify-content: center;
-  justify-content: space-between;
-  margin: 50px 0 30px 0;
-}
-.place_select_list .title {
-  font-size: 1.8rem;
-  color: #223055
-}
-.how {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-.how2 {
-  padding: 20px 0;
-}
-.how1 > label {
-  display: flex;
-  justify-content: space-between;
-}
-.how1 .start {
-  display: flex;
-}
-.how1 > label > .start > span {
-  font-size: 2rem;
-}
-.how1 > label > .center::after {
-  content: "-----";
-  position: absolute;
-  top: 8px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.how1 > label > .end > span {
-  font-size: 2rem;
-}
-.how2 > label {
-  display: flex;
-  justify-content: space-between;
-}
-.how2 .start {
-  display: flex;
-}
-.how2 > label > .start > span {
-  font-size: 2rem;
-}
-.how2 > label > .center::after {
-  content: "-----";
-  position: absolute;
-  top: 55px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.how2 > label > .end > span {
-  font-size: 2rem;
-}
-.how3 > label {
-  display: flex;
-  justify-content: space-between;
-}
-.how3 .start {
-  display: flex;
-}
-.how3 > label > .start > span {
-  font-size: 2rem;
-}
-.how3 > label > .center::after {
-  content: "-----";
-  position: absolute;
-  top: 100px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.how3 > label > .end > span {
-  font-size: 2rem;
-}
-.how3 > label > .end > span::after {
-  content: "순환";
-  font-size: 1.3rem;
-  margin-left: 10px;
-  color: #ec9923;
-  border: 1px solid #ec9923;
-  border-radius: 5px;
-  padding: 5px;
-}
-.howlong {
-  padding: 30px 0;
-}
-.howlong p {
-  text-align: left;
-  font-size: 1.6rem;
-  color: #223055;
-}
-.calendar {
-  width: 100%;
-  text-align: left;
-}
-.calendar input {
-  margin-top: 10px;
-  padding: 10px 0;
-  width: 100%;
+fieldset {
+  padding: 30px;
   border: none;
-  border-bottom: 1px solid #191919;
 }
-.daterange::placeholder {
+h2 {
+  font-size: 2rem;
+  padding: 0 0 30px 0;
+}
+fieldset > p {
+  font-size: 1.5rem;
+}
+.day90 > span {
+  font-family: GmarketSansBold;
+}
+.password_red {
+  color: red;
+}
+.password_red_setting {
+  color: red;
+}
+.password_red_setting > span {
+  color: #00539c;
+}
+.reservation_check {
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 30px;
+}
+.reservation_check_top {
+  display: block;
+  position: relative;
+}
+.payment {
+  display: block;
+  position: relative;
+  margin-bottom: 30px;
+}
+.payment_check {
+  display: flex;
+  position: relative;
+}
+.reservation_check_top > .payment > span {
   font-size: 1.8rem;
+}
+.reservation_check_top > .payment > .payment_check > label {
+  font-size: 1.6rem;
+}
+.reservation_check_top > .payment > .payment_check {
+  padding-top: 5px;
+}
+.payment_check label input[type="radio"] {
+  margin-right: 5px;
+}
+.payment_check > label:nth-child(2) {
+  margin: 0 20px;
+  white-space: nowrap;
+}
+.waiting {
+  padding: 50px 0;
+}
+.reservation_check_bottom > .check > span {
+  font-size: 1.8rem;
+}
+.reservation_check_bottom .check .check_check > label {
+  font-size: 1.6rem;
+}
+.reservation_check_bottom > .check > .check_check {
+  padding-top: 5px;
+}
+.reservation_check_bottom > .check > .check_check .check_info {
   padding-top: 10px;
 }
+.check_check label input[type="radio"] {
+  margin-right: 5px;
+}
+.check_info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0 10px;
+}
+.check_info input {
+  width: 250px;
+}
+.check_info label input[type="text"] {
+  border: none;
+  border-bottom: 1px solid #d0d1d4;
+  padding: 10px 0 10px 0;
+}
+.check_info > label > input::placeholder {
+  font-size: 1.6rem;
+}
+.password > label > input::placeholder {
+  font-size: 1.6rem;
+}
+.password {
+  display: flex;
+  flex-direction: column;
+}
+.password > span {
+  cursor: pointer;
+  font-size: 1.4rem;
+  width: 70%;
+}
+.password > span i {
+  margin-left: 5px;
+  font-size: 1.4rem;
+}
+input:focus {
+  outline: none;
+}
 button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
   font-size: 1.5rem;
   padding: 5px 10px 5px 10px;
   background-color: #223055;
