@@ -7,9 +7,9 @@
 @media screen and (max-width: 1400px) {
   /* 헤더 */
   header > .inner {
-    padding: 0 2rem;
+    padding: 1rem 2rem;
   }
-  /* 독도 행사 */
+  /* 독도 행사 *
   .event-inner {
     margin-left: 8%;
   }
@@ -70,7 +70,7 @@
   }
   .languge li a {
     font-size: 1.2rem;
-    padding: 1rem 0.5rem;
+    padding: 1rem;
   }
   .header-right-m {
     display: flex;
@@ -105,7 +105,7 @@
   }
   /* 우리독도 >> 이유 */
   .reason-box > .inner {
-    padding: 0 8%;
+    padding: 0 9% 0 8%;
   }
   .reason-img img {
     width: 60%;
@@ -266,6 +266,18 @@
   }
 }
 @media screen and (max-width: 768px) {
+  /* 헤더 */
+  header {
+    height: 70px;
+  }
+  .logo img {
+    width: 90px;
+    height: auto;
+  }
+  /* 독도친구들 */
+  .tit {
+    font-size: 2rem;
+  }
 }
 @media screen and (max-width: 750px) {
   /* 독도가는길 */
@@ -463,24 +475,18 @@
   }
 }
 @media screen and (max-width: 600px) {
-  /* 헤더 */
-  header {
-    height: 70px;
-  }
-  .logo img {
-    width: 90px;
-    height: auto;
-  }
+  /* 네비 */
   .nav-m {
-    width: 80%;
+    width: 50%;
   }
   .nav-m-active {
-    left: calc(100% - 80%);
+    left: calc(100% - 50%);
   }
   .nav-m > .header-right-m {
     display: flex;
     gap: 10px;
   }
+  /* 이유 */
   .reason-img {
     text-align: left;
   }
@@ -651,6 +657,33 @@
   .reason {
     height: 80vh;
   }
+  .reason-txt {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .page-title2,
+  .morebtn {
+    order: 1;
+  }
+  .page-des {
+    order: 2;
+  }
+  .reason-txt > .page-des {
+    margin: 0;
+  }
+  .reason-txt a {
+    margin: 3rem 0 1.5rem;
+    padding-left: 1.5rem;
+    line-height: 3rem;
+    font-weight: lighter;
+  }
+  .reason-txt a::after {
+    top: 1px;
+  }
+  .swReason .swiper-slide-active .reason-txt a {
+    transition: all 1s 0.5s;
+  }
+
   /* 독도가는길 */
   .go-map-list-dokdo > span {
     content: "";
@@ -714,6 +747,16 @@
   }
   .bt-menu {
     width: 30px;
+  }
+  .nav-m {
+    width: 80%;
+  }
+  .nav-m-active {
+    left: calc(100% - 80%);
+  }
+  .nav-m > .header-right-m {
+    display: flex;
+    gap: 10px;
   }
   /* 우리독도 >> 이유 */
   .reason-txt > .page-des {
@@ -804,6 +847,9 @@
   /* 이유*/
   .reason-txt > .page-title2 {
     font-size: 3.5rem;
+  }
+  .swReason .swiper-pagination {
+    margin-right: 1rem;
   }
 
   /* 독도 가는길 */
@@ -909,6 +955,11 @@
   }
 }
 @media screen and (max-width: 350px) {
+  /* 독도친구들 */
+  .pop_wrap .pop_inner {
+    max-width: 280px;
+    height: 320px;
+  }
   /* 독도가는길 예매 */
   .go-map-list-dokdo > span {
     top: -7px;

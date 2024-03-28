@@ -42,18 +42,34 @@ window.addEventListener("load", function () {
       logoB.style.display = "none";
     }
   });
-  //언어 펼침 기능
+  //언어
   const languageWord = document.querySelector(".language-word");
   const languageList = document.querySelector(".languge");
   let isLanguageActive = false;
-  languageWord.addEventListener("click", function () {
+
+  languageWord.addEventListener("click", function (event) {
+    event.stopPropagation();
+
     if (isLanguageActive) {
-      languageList.style.maxHeight = "0"; /* 숨김 */
+      closeLanguageList();
     } else {
-      languageList.style.maxHeight = "200px"; /* 나타냄 */
+      openLanguageList();
     }
     isLanguageActive = !isLanguageActive;
   });
+  document.addEventListener("click", function () {
+    if (isLanguageActive) {
+      closeLanguageList();
+      isLanguageActive = false;
+    }
+  });
+  function openLanguageList() {
+    languageList.style.maxHeight = "250px";
+  }
+  function closeLanguageList() {
+    languageList.style.maxHeight = "0";
+  }
+  
   // 시간
   var clockTarget = document.getElementById("clock");
   function clock() {
@@ -92,10 +108,10 @@ window.addEventListener("load", function () {
     },
     loop: true,
     speed: 500,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 2500,
+    //   disableOnInteraction: false,
+    // },
   });
   // 독도 가는길 예매페이지
   // this.document.getElementById("go-ulleung").addEventListener("click", function () {
