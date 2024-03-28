@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var val = $(document).height() - $w.height() - footerHei;
     if (sT >= val) $gotopbt.addClass("on");
     else $gotopbt.removeClass("on");
-  });
+  })
 });
 // document.addEventListener("DOMContentLoaded", function () {
 //   // top 버튼
