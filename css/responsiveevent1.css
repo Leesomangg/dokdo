@@ -11,6 +11,14 @@
     width: 35px;
     height: 35px;
   }
+  .ex1 {
+    display: flex;
+    gap: 0 10px;
+  }
+  .ex2 {
+    display: flex;
+    gap: 0 10px;
+  }
 }
 @media screen and (max-width: 375px) {
   .contents > span {
